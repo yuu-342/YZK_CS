@@ -1,6 +1,6 @@
 <header class="navbar navbar-fixed-top">
   <div>
-    <nav id="navi">
+    <nav>
       <ul class="nav navbar-nav">
         <li><%= link_to "About",   about_path %></li>
         <li><%= link_to "Company",  company_path %></li>
@@ -11,7 +11,7 @@
         <li><%= link_to "Work", work_path %></li>
       </ul>
     </nav>
-    <%= link_to image_tag("Yzk-Gym-logo1.svg", alt:"Yzk-Gym-logo"),
+    <%= link_to image_tag("Yzk-Gym-logo1.svg", alt:"Yzk-Gym-logo", :class => "logo"),
                 root_url %>
   </div>
 </header>
