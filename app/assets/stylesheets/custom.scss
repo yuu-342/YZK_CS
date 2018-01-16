@@ -1,0 +1,62 @@
+@import "bootstrap-sprockets";
+@import "bootstrap";
+
+
+/* universal */
+
+.container {
+  padding-top: 130px;
+  text-align: center;
+}
+
+
+.home1 {
+  position: relative;
+  display: inline-block;
+  height: 100%;
+  width: 100%;
+}
+
+.home1 h1 {
+  position: absolute;
+  text-align: left;
+  bottom: 0px;
+  left: 0px;
+  font-family: serif;
+  color: white;
+  font-size: 80px;
+  z-index: 50;
+}
+
+.home1 p {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  font-family: serif;
+  color: white;
+  font-size: 40px;
+}
+
+
+
+
+/* header */
+header {
+  height: 90px;
+  padding-right: 10px;
+  position: fixed;
+  background-color: white;
+  z-index: 100;
+}
+img.logo {
+  width: 120px;
+  height: 90px;
+}
+
+
+
+ul.nav {
+  position: absolute;
+  bottom: 0px;
+  right: 20px;
+}
