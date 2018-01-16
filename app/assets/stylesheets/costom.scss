@@ -4,27 +4,29 @@
 
 /* universal */
 
-
-
-section {
-  overflow: auto;
-}
-
-textarea {
-  resize: vertical;
-}
-
-.center {
-  text-align: center;
-}
-
-.center h1 {
-  margin-bottom: 10px;
-}
-
 .container {
-  padding-top: 60px;
+  padding-top: 130px;
 }
 
+h1 {
+  font-family: serif;
+}
 
 /* header */
+header {
+  height: 90px;
+  padding-right: 10px;
+  position: fixed;
+  z-index: 100;
+}
+img {
+  width: 120px;
+  height: 90px;
+}
+
+
+ul.nav {
+  position: absolute;
+  bottom: 0px;
+  right: 20px;
+}
