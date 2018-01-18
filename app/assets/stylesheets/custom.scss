@@ -1,41 +1,21 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
 
+/*mixin*/
+
+@mixin cell_box {
+}
+
 
 /* universal */
 
 .container {
   padding-top: 130px;
+  width: 100vw;
+  height: 100vh;
   text-align: center;
 }
 
-
-.home1 {
-  position: relative;
-  display: inline-block;
-  height: 100%;
-  width: 100%;
-}
-
-.home1 h1 {
-  position: absolute;
-  text-align: left;
-  bottom: 0px;
-  left: 0px;
-  font-family: serif;
-  color: white;
-  font-size: 80px;
-  z-index: 50;
-}
-
-.home1 p {
-  position: absolute;
-  top: 0px;
-  right: 0px;
-  font-family: serif;
-  color: white;
-  font-size: 40px;
-}
 
 
 
@@ -59,4 +39,81 @@ ul.nav {
   position: absolute;
   bottom: 0px;
   right: 20px;
+}
+
+li :hover {
+    color: indianRed;
+    text-decoration: none;
+    transition: border-color 0.4s, color 0.4s;
+}
+
+/*body*/
+
+  /*home*/
+
+.home1 {
+  position: relative;
+  display: inline-block;
+  height: 100vh;
+  width: 100vw;
+  animation: fadeIn 2s ease 0s 1 normal;
+    -webkit-animation: fadeIn 2s ease 0s 1 normal;
+}
+
+@keyframes fadeIn {
+    0% {opacity: 0}
+    100% {opacity: 1}
+}
+
+@-webkit-keyframes fadeIn {
+    0% {opacity: 0}
+    100% {opacity: 1}
+}
+
+.home1 h1 {
+  position: absolute;
+  text-align: left;
+  bottom: 0px;
+  left: 0px;
+  font-family: serif;
+  color: white;
+  font-size: 80px;
+  z-index: 50;
+}
+
+.home1 p {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  font-family: serif;
+  color: white;
+  font-size: 40px;
+}
+
+  /*NEWS?_AREA*/
+
+.news_list {
+  display: table;
+  width: 100%;
+  background-color: gray;
+  padding-left: 0;
+}
+
+.box_link {
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.box_link.active {
+  background-color: lightgray;
+}
+
+
+.hover_inner {
+  display: block;
+  padding: 10px 20px;
+  color: white;
+  text-decoration: none;
+  text-align: center;
 }
