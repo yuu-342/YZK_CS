@@ -18,8 +18,6 @@
 
 
 
-
-
 /* header */
 header {
   height: 90px;
@@ -87,26 +85,36 @@ li :hover {
   right: 0px;
   font-family: serif;
   color: white;
-  font-size: 40px;
+  font-size: 50px;
 }
 
-  /*NEWS?_AREA*/
+  /*NEWS_AREA*/
+
+h1.section_titlle {
+  padding-top: 100px;
+  padding-bottom: 40px;
+  font-size: 30px;
+  font-family: serif;
+}
+
 
 .news_list {
   display: table;
+  table-layout: fixed;
   width: 100%;
-  background-color: gray;
   padding-left: 0;
 }
 
 .box_link {
-  display: table-cell;
   text-align: center;
+  display: table-cell;
   vertical-align: middle;
+  border-radius: 240px 30px 100px 30px / 30px 200px 30px 185px;
+  background-color: cornflowerblue;
 }
 
 .box_link.active {
-  background-color: lightgray;
+  background-color: lightskyblue;
 }
 
 
@@ -115,5 +123,12 @@ li :hover {
   padding: 10px 20px;
   color: white;
   text-decoration: none;
+  text-align: center;
+  font-family: serif;
+}
+
+.thumbnail {
+  float: left;
+  margin: 10px 10px 10px 10px;
   text-align: center;
 }
