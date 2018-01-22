@@ -10,7 +10,7 @@
 /* universal */
 
 .container {
-  padding-top: 130px;
+  padding-top: 0px;
   width: 100vw;
   height: 100vh;
   text-align: center;
@@ -20,22 +20,22 @@
 
 /* header */
 header {
-  height: 90px;
+  height: 70px;
+  width: 60%;
   padding-right: 10px;
   position: fixed;
   background-color: white;
-  z-index: 100;
 }
+
 img.logo {
-  width: 120px;
-  height: 90px;
+  height: 60px;
 }
 
 
 
 ul.nav {
   position: absolute;
-  bottom: 0px;
+  padding-top: 10px;
   right: 20px;
 }
 
@@ -71,8 +71,8 @@ li :hover {
 .home1 h1 {
   position: absolute;
   text-align: left;
-  bottom: 0px;
-  left: 0px;
+  bottom: 55%;
+  left: 100px;
   font-family: serif;
   color: white;
   font-size: 80px;
@@ -81,11 +81,25 @@ li :hover {
 
 .home1 p {
   position: absolute;
-  top: 0px;
-  right: 0px;
+  top: 55%;
+  right: 100px;
   font-family: serif;
   color: white;
   font-size: 50px;
+}
+
+.about_btn {
+  position: absolute;
+  bottom: 90px;
+  right: 150px;
+  font-size: 20px;
+  font-family: serif;
+  padding: 10px;
+  background-color: transparent;
+  color: white;
+  border-color: white;
+  border: medium solid white;
+  border-radius: 20px 20px 20px 20px /20px 20px 20px 20px;
 }
 
   /*NEWS_AREA*/
@@ -116,6 +130,7 @@ h1.section_titlle {
 .box_link.active {
   background-color: lightskyblue;
 }
+
 
 
 .hover_inner {
