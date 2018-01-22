@@ -1,2 +1,20 @@
-<h1>StaticPages#home</h1>
-<p>Find me in app/views/static_pages/home.html.erb</p>
+<div class="home1" >
+  <%= link_to image_tag("YZKmen1.jpeg", alt:"YZKmen", :class => "home1") %>
+  <h1>楽しいを探しに行こう。</h1>
+  <p>Fun is always nearby us.</p>
+  <a href="/about" class="about_btn">About us</a>
+</div>
+<section class="news_area" >
+ <h1 class="section_titlle">NEWS</h1>
+  <nav class"news_content">
+    <ul class="news_list">
+      <li class="box_link"><span class="hover_inner">EVENT</span></li>
+      <li class="box_link active"><span class="hover_inner">PRESS LEREASE</span></li>
+    </ul>
+  </nav>
+  <%= render 'layouts/news_topic' %>
+  <%= render 'layouts/news_topic' %>
+</section>
+<section class"work_erea">
+
+</section>

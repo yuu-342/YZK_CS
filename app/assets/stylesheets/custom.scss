@@ -1,0 +1,149 @@
+@import "bootstrap-sprockets";
+@import "bootstrap";
+
+/*mixin*/
+
+@mixin cell_box {
+}
+
+
+/* universal */
+
+.container {
+  padding-top: 0px;
+  width: 100vw;
+  height: 100vh;
+  text-align: center;
+}
+
+
+
+/* header */
+header {
+  height: 70px;
+  width: 60%;
+  padding-right: 10px;
+  position: fixed;
+  background-color: white;
+}
+
+img.logo {
+  height: 60px;
+}
+
+
+
+ul.nav {
+  position: absolute;
+  padding-top: 10px;
+  right: 20px;
+}
+
+li :hover {
+    color: indianRed;
+    text-decoration: none;
+    transition: border-color 0.4s, color 0.4s;
+}
+
+/*body*/
+
+  /*home*/
+
+.home1 {
+  position: relative;
+  display: inline-block;
+  height: 100vh;
+  width: 100vw;
+  animation: fadeIn 2s ease 0s 1 normal;
+    -webkit-animation: fadeIn 2s ease 0s 1 normal;
+}
+
+@keyframes fadeIn {
+    0% {opacity: 0}
+    100% {opacity: 1}
+}
+
+@-webkit-keyframes fadeIn {
+    0% {opacity: 0}
+    100% {opacity: 1}
+}
+
+.home1 h1 {
+  position: absolute;
+  text-align: left;
+  bottom: 55%;
+  left: 100px;
+  font-family: serif;
+  color: white;
+  font-size: 80px;
+  z-index: 50;
+}
+
+.home1 p {
+  position: absolute;
+  top: 55%;
+  right: 100px;
+  font-family: serif;
+  color: white;
+  font-size: 50px;
+}
+
+.about_btn {
+  position: absolute;
+  bottom: 90px;
+  right: 150px;
+  font-size: 20px;
+  font-family: serif;
+  padding: 10px;
+  background-color: transparent;
+  color: white;
+  border-color: white;
+  border: medium solid white;
+  border-radius: 20px 20px 20px 20px /20px 20px 20px 20px;
+}
+
+  /*NEWS_AREA*/
+
+h1.section_titlle {
+  padding-top: 100px;
+  padding-bottom: 40px;
+  font-size: 30px;
+  font-family: serif;
+}
+
+
+.news_list {
+  display: table;
+  table-layout: fixed;
+  width: 100%;
+  padding-left: 0;
+}
+
+.box_link {
+  text-align: center;
+  display: table-cell;
+  vertical-align: middle;
+  border-radius: 240px 30px 100px 30px / 30px 200px 30px 185px;
+  background-color: cornflowerblue;
+}
+
+.box_link.active {
+  background-color: lightskyblue;
+}
+
+
+
+.hover_inner {
+  display: block;
+  padding: 10px 20px;
+  color: white;
+  text-decoration: none;
+  text-align: center;
+  font-family: serif;
+}
+
+.thumbnail {
+  float: left;
+  margin: 10px 10px 10px 10px;
+  text-align: center;
+}
