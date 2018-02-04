@@ -1,20 +1,34 @@
-<div class="top" >
-  <%= link_to image_tag("YZKmen1.jpeg", alt:"YZKmen", :class => "top") %>
+<div class="top" ><!--  スライドを入れたい -->
+  <%= image_tag("YZKmen1.jpeg", alt:"YZKmen", :class => "top") %>
   <h1>楽しいを探しに行こう。</h1>
   <p>Fun is always nearby us.</p>
   <a href="/about" class="about_btn">About us</a><!-- contactボタンを作るかも　5/9 -->
 </div>
 <section class="news_area" >
- <h1 class="section_titlle">NEWS</h1><!-- レイアウトが決まってない　-->
-  <nav class"news_content">
-    <ul class="news_list">
-      <li class="box_link"><span class="hover_inner">EVENT</span></li>
-      <li class="box_link active"><span class="hover_inner">PRESS LEREASE</span></li>
-    </ul>
-  </nav>
-  <%= render 'layouts/news_topic' %><!-- セルは現状では横並びになっているが、縦にする予定　-->
-  <%= render 'layouts/news_topic' %>
+ <h1 class="section_titlle">NEWS</h1>
+  <div class="news_list">
+    <span class="text">PRESS LEREASE</span>
+  </div >
+  <ul class="news_content"><!-- 謎の空間ができる　-->
+    <li class="pickup_news">
+      <%= render 'layouts/news_topic' %>
+    </li>
+    <li class="news_topics">
+      <p>ここにNEWSをいれる</p>
+      <p>ここにNEWSをいれる</p>
+      <p>ここにNEWSをいれる</p>
+      <p>ここにNEWSをいれる</p>
+      <p>ここにNEWSをいれる</p>
+      <p>ここにNEWSをいれる</p>
+      <p>ここにNEWSをいれる</p>
+    </li>
+  </ul>
 </section>
-<section class"work_erea"> <!-- 内容によるが、バナーだけでいいかも　-->
-
+<section class="work_area"> <!-- cellが思うようにいかない(上に行ってしまう))　-->
+  <div>
+    <%= image_tag("YZKmen2.jpg", alt:"YZKmen2", :class => "back_image") %>
+    <p class="work_text">
+      テキストを入れる
+    </p>
+  </div>
 </section>
