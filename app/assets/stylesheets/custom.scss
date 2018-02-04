@@ -9,6 +9,7 @@
 
 .container {
   padding: 0px;
+  margin-right: 0px;
   width: 100vw;
   height: 100vh;
   text-align: center;
@@ -22,7 +23,7 @@ header {
   width: 60%;
   padding-right: 10px;
   position: fixed;
-  background-color: white;
+  background-color: black;
 }
 
 img.logo {
@@ -38,7 +39,7 @@ ul.nav {
 }
 
 li :hover {
-    color: indianRed;
+    color: lightskyblue;
     text-decoration: none;
     transition: border-color 0.4s, color 0.4s;
 }
@@ -109,39 +110,64 @@ h1.section_titlle {
   font-family: serif;
 }
 
-
 .news_list {
-  display: table;
-  table-layout: fixed;
-  width: 100%;
-  padding-left: 0;
-}
-
-.box_link {
-  text-align: center;
-  display: table-cell;
-  vertical-align: middle;
-  border-radius: 240px 30px 100px 30px / 30px 200px 30px 185px;
   background-color: cornflowerblue;
 }
 
-.box_link.active {
-  background-color: lightskyblue;
-}
-
-
-
-.hover_inner {
-  display: block;
-  padding: 10px 20px;
-  color: white;
-  text-decoration: none;
-  text-align: center;
+.text {
+  font-size: 15px;
   font-family: serif;
+  color: white;
+  text-align: center;
+  letter-spacing: 5px;
 }
 
 .thumbnail {
   float: left;
   margin: 10px 10px 10px 10px;
   text-align: center;
+}
+
+ul.news_content {
+  text-align: left;
+}
+
+li.pickup_news {
+  width: 500px;
+  height: 150px;
+  margin-right: 0;
+  float: left;
+  overflow-y: scroll;
+  white-space: nowrap;
+}
+
+li.news_topics {
+  width: 500px;
+  height: 150px;
+  text-align: center;
+  overflow-y: scroll;
+  white-space: nowrap;
+}
+
+/*  work_erea  */
+
+.work_area {
+  margin-top: 70px;
+}
+
+.work_image {
+  position: relative;
+}
+
+.back_image {
+  display: table-cell;
+  width: 100vw;
+}
+
+.work_text {
+  position: absolute;
+  display: cell;
+  width: 50%;
+  text-align: center;
+  bottom: 50%;
 }

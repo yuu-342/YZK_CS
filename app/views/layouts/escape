@@ -1,0 +1,52 @@
+<section class="news_area" >
+ <h1 class="section_titlle">NEWS</h1><!-- レイアウトが決まってない　-->
+  <nav class"news_content">
+    <ul class="news_list">
+      <li class="box_link"><span class="hover_inner">EVENT</span></li>
+      <li class="box_link active"><span class="hover_inner">PRESS LEREASE</span></li>
+    </ul>
+  </nav>
+  <%= render 'layouts/news_topic' %><!-- セルは現状では横並びになっているが、縦にする予定　-->
+  <%= render 'layouts/news_topic' %>
+</section>
+<section class"work_erea"> <!-- 内容によるが、バナーだけでいいかも　-->
+
+</section>
+
+
+
+.news_list {
+  display: table;
+  table-layout: fixed;
+  width: 100%;
+  padding-left: 0;
+}
+
+.box_link {
+  text-align: center;
+  display: table-cell;
+  vertical-align: middle;
+  border-radius: 240px 30px 100px 30px / 30px 200px 30px 185px;
+  background-color: cornflowerblue;
+}
+
+.box_link.active {
+  background-color: lightskyblue;
+}
+
+
+
+.hover_inner {
+  display: block;
+  padding: 10px 20px;
+  color: white;
+  text-decoration: none;
+  text-align: center;
+  font-family: serif;
+}
+
+.thumbnail {
+  float: left;
+  margin: 10px 10px 10px 10px;
+  text-align: center;
+}
