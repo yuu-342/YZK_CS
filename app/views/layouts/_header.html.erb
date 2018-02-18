@@ -1,17 +1,15 @@
 <header class="navbar navbar-fixed-top"><!-- アス比が変わっても崩れないように要css調整 文字の色　-->
-  <div>
-    <nav>
-      <ul class="nav navbar-nav">
-        <li><%= link_to "About",   about_path %></li>
-        <li><%= link_to "Work", work_path %></li>
-        <li><%= link_to "Company",  company_path %></li>
-        <li><%= link_to "Member", member_path %></li><!-- interviewに変更するかも　-->
-        <li><%= link_to "News", news_path %></li>
-        <li><%= link_to "Recruit", recruit_path %></li>
-        <li><%= link_to "Trainning", trainning_path %></li>
-      </ul>
-    </nav>
+  <div id="nav-drawer">
     <%= link_to image_tag("Yzk-Gym-logo2.svg", alt:"Yzk-Gym-logo", :class => "logo"),
                 root_url %>
+    <input id="nav-input" type="checkbox" class="nav-unshown">
+    <label id="nav-open" for="nav-input"><span></span></label>
+    <label class="nav-unshown" id="nav-close" for="nav-input"></label>
+      <div id="nav-content"><%= link_to "企業概要",   about_path %></div>
+      <div id="nav-content"><%= link_to "実績紹介", work_path %></div>
+      <!--<div id="nav-content"><%= link_to "Member", member_path %></div>-- interviewに変更するかも　-->
+      <div id="nav-content"><%= link_to "ニュース", news_path %></div>
+      <div id="nav-content"><%= link_to "採用情報", recruit_path %></div>
+      <div id="nav-content"><%= link_to "人材育成", trainning_path %></div>
   </div>
 </header>
