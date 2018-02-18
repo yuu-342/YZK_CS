@@ -7,11 +7,18 @@
   margin-right: 50px;
   padding-left: 30px;
   padding-top: 20px;
-  font-size: 40px;
+  font-size: 30px;
   font-family: serif;
   color: #283593;
   text-align: left;
   border-bottom: solid #283593;
+}
+
+@mixin footer{
+  display: table-cell;
+  line-height: 5px;
+  padding-top:10px;
+  font-size: 10px;
 }
 
 
@@ -71,8 +78,8 @@
   display: inline-block;
   position: absolute;
   padding-top: 5px;
-  width: 30px;
-  height: 22px;
+  width: 40px;
+  height: 30px;
   vertical-align: middle;
   right: 0;
 }
@@ -166,7 +173,7 @@
     }
   .top p {
     position: absolute;
-    top: 55%;
+    top: 50%;
     right: 100px;
     font-family: serif;
     color: white;
@@ -174,9 +181,9 @@
     }
   .about_btn {
     position: absolute;
-    bottom: 90px;
-    right: 150px;
-    font-size: 20px;
+    bottom: 60px;
+    right: 80px;
+    font-size: 10px;
     font-family: serif;
     padding: 10px;
     background-color: transparent;
@@ -192,6 +199,7 @@
   .top {
     position: relative;
     display: inline-block;
+    width: 100vw;
     animation: fadeIn 2s ease 0s 1 normal;
       -webkit-animation: fadeIn 2s ease 0s 1 normal;
     }
@@ -199,27 +207,27 @@
   .top h1 {
     position: absolute;
     text-align: left;
-    bottom: 55%;
-    left: 100px;
+    bottom: 50%;
+    left: 50px;
     font-family: serif;
     color: white;
-    font-size: 40px;
+    font-size: 20px;
     z-index: 50;
     }
 
   .top p {
     position: absolute;
-    top: 55%;
-    right: 100px;
+    top: 50%;
+    right: 50px;
     font-family: serif;
     color: white;
-    font-size: 20px;
+    font-size: 15px;
     }
 
   .about_btn {
     position: absolute;
-    bottom: 60px;
-    right: 70px;
+    bottom: 50px;
+    right: 50px;
     font-size: 10px;
     font-family: serif;
     padding: 10px;
@@ -239,24 +247,16 @@
   }
 
   .news_title {
-    margin-left: 10px;
-    margin-right: 50px;
-    padding-left: 30px;
-    padding-top: 10px;
-    font-size: 40px;
-    font-family: serif;
-    color: #283593;
-    text-align: left;
-    border-bottom: solid #283593;
+    @include title;
   }
 
   .news_list {
     padding-top: 10px;
     padding-left: 50px;
-    height: 100px;
+    height: 70px;
     text-align: left;
     list-style: none;
-    font-size: 15px;
+    font-size: 10px;
   }
 
   .news_list p {
@@ -360,19 +360,20 @@
 
   .footer_area{
     display: table;
+    width:100vw;
   }
 
   .footer1 {
-    display: table-cell;
+    @include footer;
   }
 
   .footer2 {
-    display: table-cell;
+    @include footer;
   }
 
   .footer3{
-    display: table-cell;
-    right: 0;
+    @include footer;
+    left: 0;
   }
 }
 
