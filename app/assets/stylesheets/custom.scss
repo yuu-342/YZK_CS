@@ -43,8 +43,8 @@
   header {
   height: 70px;
   width: 60%;
-  position: fixed;
   padding-right: 10px;
+  position: fixed;
   background-color: black;
   }
 
@@ -229,4 +229,156 @@
     border: medium solid white;
     border-radius: 20px 20px 20px 20px /20px 20px 20px 20px;
     }
+}
+
+
+  /*NEWS_AREA*/
+
+@media screen and (max-width: 479px){
+  .news_area {
+  }
+
+  .news_title {
+    margin-left: 10px;
+    margin-right: 50px;
+    padding-left: 30px;
+    padding-top: 10px;
+    font-size: 40px;
+    font-family: serif;
+    color: #283593;
+    text-align: left;
+    border-bottom: solid #283593;
+  }
+
+  .news_list {
+    padding-top: 10px;
+    padding-left: 50px;
+    height: 100px;
+    text-align: left;
+    list-style: none;
+    font-size: 15px;
+  }
+
+  .news_list p {
+
+  }
+}
+
+@media screen and (min-width: 480px){
+  .news_area {
+    padding-top: 10px;
+    border: 5px solid black;
+  }
+
+  .news_title {
+    margin-left: 10px;
+    margin-right: 50px;
+    padding-left: 50px;
+    padding-top: 20px;
+    font-size: 50px;
+    font-family: 'Zapfino','SignPainter','Brush Script MT','Sitka Small';
+    text-align: left;
+    border-bottom: solid lightskyblue;
+  }
+
+  .news_list {
+    padding-top: 40px;
+    padding-left: 50px;
+    height: 200px;
+    text-align: left;
+    list-style: none;
+    font-size: 15px;
+    overflow-y: scroll;
+    white-space: nowrap;
+  }
+
+  .news_list p {
+
+  }
+}
+
+
+/*  about_area  */
+@media screen and (max-width:479px) {
+.about_area {
+  height: 300px;
+  background-color: white;
+}
+
+.about_title {
+  padding-top: 10px;
+  @include title;
+}
+}
+
+/*  work_area  */
+@media screen and (max-width:479px) {
+.work_area {
+  height: 300px;
+  background-color: ghostwhite;
+}
+
+.work_title {
+  padding-top: 10px;
+  @include title;
+}
+}
+
+/*  recruit_area  */
+@media screen and (max-width:479px) {
+.recruit_area {
+  height: 300px;
+  background-color: white;
+}
+
+.recruit_title {
+  padding-top: 10px;
+  @include title;
+}
+}
+
+
+/*  trainning_area  */
+@media screen and (max-width:479px) {
+.trainning_area {
+  height: 300px;
+  background-color: ghostwhite;
+}
+
+.trainning_title {
+  padding-top: 10px;
+  @include title;
+}
+}
+
+/*  footer  */
+@media screen and (max-width:479px){
+  footer {
+    margin-top: auto;
+    background-color: lightgray;
+  }
+
+  .footer_area{
+    display: table;
+  }
+
+  .footer1 {
+    display: table-cell;
+  }
+
+  .footer2 {
+    display: table-cell;
+  }
+
+  .footer3{
+    display: table-cell;
+    right: 0;
+  }
+}
+
+
+/* debug */
+.debug_dump {
+  position: relative;
+  margin-top: auto;
 }
