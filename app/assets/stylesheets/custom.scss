@@ -5,13 +5,19 @@
 @mixin title{
   margin-left: 10px;
   margin-right: 50px;
-  padding-left: 30px;
+  padding-left: 10px;
   padding-top: 20px;
-  font-size: 30px;
+  font-size: 20px;
   font-family: serif;
   color: #283593;
   text-align: left;
-  border-bottom: solid #283593;
+  border-bottom: 1px solid #283593;
+}
+
+@mixin content_area{
+  margin: 10px 30px;
+  height: 280px;
+  background-color: white;
 }
 
 @mixin footer{
@@ -23,11 +29,14 @@
 
 
 /* universal */
+
+body {
+  background-color: ghostwhite;
+}
 .container {
   padding: 0 0;
   height:100vh;
   width: 100vw;
-  background-color: ghostwhite;
 }
 
 
@@ -244,19 +253,37 @@
 
 @media screen and (max-width: 479px){
   .news_area {
+    height:200px;
   }
 
-  .news_title {
-    @include title;
+  .news_area2 {
+    margin: 10px 10px;
+    height: 180px;
+    background-color: white;
   }
 
   .news_list {
-    padding-top: 10px;
-    padding-left: 50px;
-    height: 70px;
+    padding-left: 0;
+    line-height: 10px;
+  }
+
+  .news_title {
+    padding-left: 20px;
+    padding-top: 20px;
+    font-size: 15px;
+    font-family: serif;
+    color: #283593;
+    text-align: left;
+  }
+
+  li.news_item {
+    margin-top: 10px;
+    margin-left: 20px;
+    margin-right: 30px;
     text-align: left;
     list-style: none;
     font-size: 10px;
+    border-bottom: 1px solid lightgray;
   }
 
   .news_list p {
@@ -302,7 +329,11 @@
 @media screen and (max-width:479px) {
 .about_area {
   height: 300px;
-  background-color: white;
+  margin-top: 0;
+}
+
+.about_area2{
+  @include content_area;
 }
 
 .about_title {
@@ -315,7 +346,10 @@
 @media screen and (max-width:479px) {
 .work_area {
   height: 300px;
-  background-color: ghostwhite;
+}
+
+.work_area2{
+  @include content_area;
 }
 
 .work_title {
@@ -328,7 +362,10 @@
 @media screen and (max-width:479px) {
 .recruit_area {
   height: 300px;
-  background-color: white;
+}
+
+.recruit_area2 {
+  @include content_area ;
 }
 
 .recruit_title {
@@ -342,7 +379,10 @@
 @media screen and (max-width:479px) {
 .trainning_area {
   height: 300px;
-  background-color: ghostwhite;
+}
+
+.trainning_area2 {
+  @include content_area;
 }
 
 .trainning_title {
