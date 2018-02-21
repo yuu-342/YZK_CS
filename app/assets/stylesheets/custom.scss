@@ -5,19 +5,23 @@
 @mixin title{
   margin-left: 10px;
   margin-right: 50px;
-  padding-left: 10px;
   padding-top: 20px;
   font-size: 20px;
   font-family: serif;
   color: #283593;
   text-align: left;
-  border-bottom: 1px solid #283593;
+  font-family: sans-serif;
+}
+@mixin box {
+  height: 420px;
 }
 
 @mixin content_area{
+  position:relative;
   margin: 10px 30px;
-  height: 280px;
+  height: 400px;
   background-color: white;
+  text-align: center;
 }
 
 @mixin footer{
@@ -31,12 +35,25 @@
 /* universal */
 
 body {
-  background-color: ghostwhite;
+  background-color: #005499;
 }
 .container {
   padding: 0 0;
   height:100vh;
   width: 100vw;
+}
+
+@media screen and (max-width:479px){
+.session_btn {
+  position: absolute;
+  bottom: 10px;
+}
+}
+
+#title_txt {
+  padding-left: 10px;
+  border-left: 3px solid #283593;
+　font-family: sans-serif;
 }
 
 
@@ -257,7 +274,7 @@ body {
   }
 
   .news_area2 {
-    margin: 10px 10px;
+    margin: 10px 15px;
     height: 180px;
     background-color: white;
   }
@@ -265,13 +282,14 @@ body {
   .news_list {
     padding-left: 0;
     line-height: 10px;
+    height:150px;
   }
 
   .news_title {
     padding-left: 20px;
     padding-top: 20px;
-    font-size: 15px;
-    font-family: serif;
+    font-size: 10px;
+    font-family: sans-serif;
     color: #283593;
     text-align: left;
   }
@@ -328,8 +346,7 @@ body {
 /*  about_area  */
 @media screen and (max-width:479px) {
 .about_area {
-  height: 300px;
-  margin-top: 0;
+  @include box;
 }
 
 .about_area2{
@@ -337,7 +354,6 @@ body {
 }
 
 .about_title {
-  padding-top: 10px;
   @include title;
 }
 }
@@ -345,7 +361,7 @@ body {
 /*  work_area  */
 @media screen and (max-width:479px) {
 .work_area {
-  height: 300px;
+  @include box;
 }
 
 .work_area2{
@@ -353,7 +369,6 @@ body {
 }
 
 .work_title {
-  padding-top: 10px;
   @include title;
 }
 }
@@ -361,7 +376,7 @@ body {
 /*  recruit_area  */
 @media screen and (max-width:479px) {
 .recruit_area {
-  height: 300px;
+  @include box;
 }
 
 .recruit_area2 {
@@ -369,7 +384,6 @@ body {
 }
 
 .recruit_title {
-  padding-top: 10px;
   @include title;
 }
 }
@@ -378,7 +392,7 @@ body {
 /*  trainning_area  */
 @media screen and (max-width:479px) {
 .trainning_area {
-  height: 300px;
+  @include box;
 }
 
 .trainning_area2 {
@@ -386,7 +400,6 @@ body {
 }
 
 .trainning_title {
-  padding-top: 10px;
   @include title;
 }
 }
