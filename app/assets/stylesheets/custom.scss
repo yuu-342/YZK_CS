@@ -5,7 +5,6 @@
 @mixin title{
   margin-left: 10px;
   margin-right: 50px;
-  padding-top: 20px;
   font-size: 20px;
   font-family: serif;
   color: #283593;
@@ -22,6 +21,7 @@
   height: 400px;
   background-color: white;
   text-align: center;
+  border: 1.5px solid lightgray;
 }
 
 @mixin footer{
@@ -38,6 +38,7 @@ body {
   background-color: #005499;
 }
 .container {
+  margin-top: 40px;
   padding: 0 0;
   height:100vh;
   width: 100vw;
@@ -46,7 +47,10 @@ body {
 @media screen and (max-width:479px){
 .session_btn {
   position: absolute;
-  bottom: 10px;
+left: 0;
+right: 0;
+bottom: 10px;
+margin: auto;
 }
 }
 
@@ -60,11 +64,11 @@ body {
 /* header */
 @media screen and (max-width:479px){
   header {
-  height: 40px;
+  min-height: 40px !important;
   width: 100%;
   padding-right: 10px;
   position: fixed;
-  background-color: transparent;
+  background-color: white;
   }
 
   img.logo {
@@ -103,7 +107,7 @@ body {
 #nav-open {
   display: inline-block;
   position: absolute;
-  padding-top: 5px;
+  padding-top: 9px;
   width: 40px;
   height: 30px;
   vertical-align: middle;
@@ -116,7 +120,7 @@ body {
    height: 3px;/*線の太さ*/
    width: 25px;/*長さ*/
    border-radius: 3px ;
-   background: white;
+   background: lightgray;
    display: block;
    content: '';
    cursor: pointer;
@@ -277,6 +281,7 @@ body {
     margin: 10px 15px;
     height: 180px;
     background-color: white;
+    border: 1.5px solid lightgray;
   }
 
   .news_list {
