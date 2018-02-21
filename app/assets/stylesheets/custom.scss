@@ -5,6 +5,7 @@
 @mixin title{
   margin-left: 10px;
   margin-right: 50px;
+  padding-top:10px;
   font-size: 20px;
   font-family: serif;
   color: #283593;
@@ -21,7 +22,9 @@
   height: 400px;
   background-color: white;
   text-align: center;
-  border: 1.5px solid lightgray;
+  background: #fff;
+  border-radius: 5px;
+  box-shadow: 2px 3px 2px -1px #ccc;
 }
 
 @mixin footer{
@@ -47,10 +50,12 @@ body {
 @media screen and (max-width:479px){
 .session_btn {
   position: absolute;
-left: 0;
-right: 0;
-bottom: 10px;
-margin: auto;
+  padding-top: 5px;
+  left: 0;
+  right: 0;
+  bottom: 10px;
+  margin: auto;
+  border-top: 1px solid lightgray;
 }
 }
 
@@ -292,7 +297,6 @@ margin: auto;
 
   .news_title {
     padding-left: 20px;
-    padding-top: 20px;
     font-size: 10px;
     font-family: sans-serif;
     color: #283593;
