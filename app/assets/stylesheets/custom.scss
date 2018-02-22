@@ -21,7 +21,10 @@
   height: 400px;
   background-color: white;
   text-align: center;
-  border: 1.5px solid lightgray;
+  border: 1px solid lightgray;
+  background: #fff;
+  border-radius: 5px;
+  box-shadow: 2px 3px 2px -1px #ccc;
 }
 
 @mixin footer{
@@ -35,7 +38,7 @@
 /* universal */
 
 body {
-  background-color: #005499;
+  background-color: #7aa9cc;
 }
 .container {
   margin-top: 40px;
@@ -47,10 +50,12 @@ body {
 @media screen and (max-width:479px){
 .session_btn {
   position: absolute;
-left: 0;
-right: 0;
-bottom: 10px;
-margin: auto;
+  padding-top: 5px;
+  left: 0;
+  right: 0;
+  bottom: 10px;
+  margin: auto;
+  border-top: 1px solid lightgray;
 }
 }
 
@@ -281,7 +286,9 @@ margin: auto;
     margin: 10px 15px;
     height: 180px;
     background-color: white;
-    border: 1.5px solid lightgray;
+    border: 1px solid lightgray;
+    border-radius: 5px;
+    box-shadow: 2px 3px 2px -1px #ccc;
   }
 
   .news_list {
@@ -292,7 +299,6 @@ margin: auto;
 
   .news_title {
     padding-left: 20px;
-    padding-top: 20px;
     font-size: 10px;
     font-family: sans-serif;
     color: #283593;
