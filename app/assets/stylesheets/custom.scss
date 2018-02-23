@@ -38,7 +38,7 @@
 /* universal */
 
 body {
-  background-color: ghostwhite;
+  background-color: white;
 }
 .container {
   margin-top: 40px;
@@ -286,12 +286,13 @@ body {
 
 @media screen and (max-width: 479px){
   .news_area {
-    height:200px;
+    margin-top: 10px;
+    height:250px;
   }
 
   .news_area2 {
-    margin: 10px 15px;
-    height: 180px;
+    margin: 5px 10px;
+    height: 230px;
     background-color: white;
     border: 1px solid lightgray;
     border-radius: 5px;
@@ -300,13 +301,15 @@ body {
 
   .news_list {
     padding-left: 0;
-    line-height: 10px;
-    height:150px;
+    line-height: 15px;
+    height:auto;
   }
 
   .news_title {
+    margin-top: 15px !important;
+    margin-bottom: 15px !important;
     padding-left: 20px;
-    font-size: 10px;
+    font-size: 20px;
     font-family: sans-serif;
     color: #283593;
     text-align: left;
@@ -318,7 +321,7 @@ body {
     margin-right: 30px;
     text-align: left;
     list-style: none;
-    font-size: 10px;
+    font-size: 12px;
     border-bottom: 1px solid lightgray;
   }
 
