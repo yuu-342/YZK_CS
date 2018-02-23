@@ -12,13 +12,13 @@
   font-family: sans-serif;
 }
 @mixin box {
-  height: 420px;
+  height: 510px;
 }
 
 @mixin content_area{
   position:relative;
-  margin: 5px 30px;
-  height: 400px;
+  margin: 5px 10px;
+  height: 500px;
   background-color: white;
   text-align: center;
   border: 1px solid lightgray;
