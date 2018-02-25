@@ -2,14 +2,15 @@
 @import "bootstrap";
 
 /*mixin*/
+
+  /*  max-width :479px */
 @mixin title{
   margin-left: 10px;
   margin-right: 50px;
   font-size: 20px;
-  font-family: serif;
+  font-family: 'Hiragino Kaku Gothic ProN', 'ヒラギノ角ゴ ProN W3', Meiryo, メイリオ, Osaka, 'MS PGothic', arial, helvetica, sans-serif;;
   color: #283593;
   text-align: left;
-  font-family: sans-serif;
 }
 @mixin box {
   height: 510px;
@@ -35,19 +36,34 @@
 }
 
 
+    /*  min-width:480px  */
+
+@mixin content_area2{
+  position:relative;
+  margin: 5px 10px;
+  height: 300px;
+  background-color: white;
+  text-align: center;
+  border: 1px solid lightgray;
+  background: #fff;
+  border-radius: 5px;
+  box-shadow: 2px 3px 2px -1px #ccc;
+}
+
 /* universal */
 
-body {
-  background-color: white;
-}
-.container {
-  margin-top: 40px;
-  padding: 0 0;
-  height:100vh;
-  width: 100vw;
-}
-
 @media screen and (max-width:479px){
+  body {
+    background-color: white;
+  }
+  .container {
+    margin-top: 40px;
+    padding: 0 0;
+    height:100vh;
+    width: 100vw;
+  }
+
+
 .session_image {
   width: auto;
   height: auto;
@@ -64,14 +80,34 @@ body {
   margin: auto;
   border-top: 1px solid lightgray;
 }
-}
 
 #title_txt {
   padding-left: 10px;
   border-left: 3px solid #283593;
 　font-family: sans-serif;
 }
+}
 
+@media screen and (min-width:480px){
+
+  body {
+    background-color: white;
+  }
+  .container {
+    margin-top: 0;
+    padding: 0 0;
+    height:100vh;
+    width: 100vw;
+  }
+
+  .session_image {
+    width: 100vw;
+    height: auto;
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+  }
+}
 
 /* header */
 @media screen and (max-width:479px){
@@ -94,7 +130,7 @@ body {
   width: 60%;
   padding-right: 10px;
   position: fixed;
-  background-color: black;
+  background-color: white;
   }
 
   img.logo {
@@ -162,7 +198,7 @@ body {
 #nav-content {
     overflow: auto;
     position: fixed;
-    top: 0;
+    top: auto;
     left: 0;
     z-index: 9999;/*最前面に*/
     width: 90%;/*右側に隙間を作る（閉じるカバーを表示）*/
@@ -195,13 +231,15 @@ body {
   /*home*/
 
 @media screen and (min-width:480px){
-  .top {
+  .top_image {
     position: relative;
     display: inline-block;
     width: 100vw;
     animation: fadeIn 2s ease 0s 1 normal;
       -webkit-animation: fadeIn 2s ease 0s 1 normal;
     }
+
+
 
   .top h1 {
     position: absolute;
@@ -241,9 +279,14 @@ body {
   .top {
     position: relative;
     display: inline-block;
-    width: 100vw;
     animation: fadeIn 2s ease 0s 1 normal;
       -webkit-animation: fadeIn 2s ease 0s 1 normal;
+    }
+
+  .top_image{
+      object-fit: cover;
+      height: 40%;
+      max-width:100%
     }
 
   .top h1 {
@@ -332,8 +375,8 @@ body {
 
 @media screen and (min-width: 480px){
   .news_area {
-    padding-top: 10px;
-    border: 5px solid black;
+    margin-top: 20px;
+    border: 1px solid black;
   }
 
   .news_title {
@@ -379,34 +422,98 @@ body {
 }
 }
 
+@media screen and (min-width:480px){
+  .about_area {
+    height: 300px;
+    width: 100vw;
+    position:relative;
+  }
+
+  .about_area2{
+    @include content_area2;
+  }
+
+  .about_title {
+    position: absolute;
+  }
+
+  .txt{
+    position:absolute;
+    z-index: auto;
+  }
+}
+
 /*  work_area  */
 @media screen and (max-width:479px) {
-.work_area {
-  @include box;
+  .work_area {
+    @include box;
+  }
+
+  .work_area2{
+    @include content_area;
+  }
+
+  .work_title {
+    @include title;
+  }
 }
 
-.work_area2{
-  @include content_area;
-}
+@media screen and (min-width:480px){
+  .work_area {
+    height: 300px;
+    width: 100vw;
+    position:relative;
+  }
 
-.work_title {
-  @include title;
-}
+  .work_area2{
+    @include content_area2;
+  }
+
+  .work_title {
+    position: absolute;
+  }
+
+  .txt{
+    position:absolute;
+    bottom: 10px;
+    z-index: auto;
+  }
 }
 
 /*  recruit_area  */
 @media screen and (max-width:479px) {
-.recruit_area {
-  @include box;
+  .recruit_area {
+    @include box;
+   }
+
+  .recruit_area2 {
+    @include content_area ;
+  }
+
+  .recruit_title {
+    @include title;
+  }
 }
 
-.recruit_area2 {
-  @include content_area ;
-}
+@media screen and (min-width:480px){
+  .recruit_area {
+    height: 300px;
+    width: 100vw;
+    position:relative;
+  }
 
-.recruit_title {
-  @include title;
-}
+  .recruit_area2{
+    @include content_area2;
+  }
+
+  .recruit_title {
+    position: absolute;
+  }
+
+  .txt{
+    position:absolute;
+    z-index: auto;
+  }
 }
 
 
@@ -425,8 +532,56 @@ body {
 }
 }
 
+@media screen and (min-width:480px){
+  .trainning_area {
+    height: 300px;
+    width: 100vw;
+    position:relative;
+  }
+
+  .trainning_area2{
+    @include content_area2;
+  }
+
+  .trainning_title {
+    position: absolute;
+  }
+
+  .txt{
+    position:absolute;
+    z-index: auto;
+  }
+}
+
 /*  footer  */
 @media screen and (max-width:479px){
+  footer {
+    margin-top: auto;
+    background-color: lightgray;
+  }
+
+  .footer_area{
+    display: table;
+    width:100vw;
+  }
+
+  .footer1 {
+    @include footer;
+  }
+
+  .footer2 {
+    @include footer;
+    margin-top: 10px;
+  }
+
+  .footer3{
+    @include footer;
+    margin-top: 10px;
+    left: 0;
+  }
+}
+
+@media screen and (min-width:480px){
   footer {
     margin-top: auto;
     background-color: lightgray;
