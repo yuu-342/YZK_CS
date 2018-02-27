@@ -1,6 +1,8 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
 
+
+
 /*mixin*/
 
   /*  max-width :479px */
@@ -86,6 +88,12 @@
   border-left: 3px solid #283593;
 　font-family: sans-serif;
 }
+
+.tweetbtn{
+  position: absolute;
+  right:30px;
+  bottom: 10px;
+}
 }
 
 @media screen and (min-width:480px){
@@ -107,6 +115,16 @@
     max-height: 100%;
     object-fit: cover;
   }
+
+  .box_title{
+    position: absolute;
+    bottom: 20px;
+  }
+
+  .box_txt{
+    position: absolute;
+    bottom: 10px;
+}
 }
 
 /* header */
@@ -436,11 +454,6 @@
   .about_title {
     position: absolute;
   }
-
-  .txt{
-    position:absolute;
-    z-index: auto;
-  }
 }
 
 /*  work_area  */
@@ -472,12 +485,6 @@
   .work_title {
     position: absolute;
   }
-
-  .txt{
-    position:absolute;
-    bottom: 10px;
-    z-index: auto;
-  }
 }
 
 /*  recruit_area  */
@@ -508,11 +515,6 @@
 
   .recruit_title {
     position: absolute;
-  }
-
-  .txt{
-    position:absolute;
-    z-index: auto;
   }
 }
 
@@ -547,8 +549,9 @@
     position: absolute;
   }
 
-  .txt{
+  .box_txt{
     position:absolute;
+    bottom: 10px;
     z-index: auto;
   }
 }

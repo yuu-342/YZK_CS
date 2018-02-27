@@ -27,35 +27,35 @@
   <div class="about_area2">
     <h1 class="about_title"><span id="title_txt">企業概要</span></h1>
     <%= image_tag("miu.jpg", alt:"YZKmiu", :class => "session_image") %>
-    <a class="txt">私たちについて</a>
-    <a class="txt">ここにずらーっとかく</a><!-- 画像を入れるか考える -->
-    <div class="session_btn"><a herf="/about">もっと見る</a></div><!-- ボタンのデザイン -->
+    <a class="box_title">私たちについて</a>
+    <a class="box_txt">ここにずらーっとかく</a><!-- 画像を入れるか考える -->
+    <div class="session_btn"><%= link_to "もっと見る", about_path %></div><!-- ボタンのデザイン -->
   </div>
 </section>
 <section class="work_area">
   <div class="work_area2">
     <h1 class="work_title"><span id="title_txt">業績紹介</span></h1>
     <%= image_tag("omochi1.jpg", alt:"omochi", :class => "session_image") %>
-    <a>業績紹介</a>
-    <a>ここにずらーっとかく</a>
-    <div class="session_btn"><a herf="/about">もっと見る</a></div>
+    <a class"box_title">業績紹介</a>
+    <a class="box_txt">ここにずらーっとかく</a>
+    <div class="session_btn"><%= link_to "もっと見る", work_path %></div>
   </div>
 </section>
 <section class="recruit_area">
   <div class="recruit_area2">
     <h1 class="recruit_title"><span id="title_txt">採用情報</span></h1>
     <%= image_tag("omochi2.jpg", alt:"omochi", :class => "session_image") %>
-    <a>採用情報</a>
-    <a>ここにずらーっとかく</a>
-    <div class="session_btn"><a herf="/about">もっと見る</a></div>
+    <a class="box_title">採用情報</a>
+    <a class="box_txt">ここにずらーっとかく</a>
+    <div class="session_btn"><%= link_to "もっと見る", recruit_path %></div>
   </div>
 </section>
 <section class="trainning_area">
   <div class="trainning_area2">
     <h1 class="trainning_title"><span id="title_txt">人材育成</span></h1>
     <%= image_tag("omochi3.jpg", alt:"omochi", :class => "session_image") %>
-    <a>人材育成</a>
-    <a>ここにずらーっとかく</a>
-    <div class="session_btn"><a herf="/about">もっと見る</a></div>
+    <a class="box_title">人材育成</a>
+    <a class="box_txt">ここにずらーっとかく</a>
+    <div class="session_btn"><%= link_to "もっと見る", trainning_path %></div>
   </div>
 </section>
