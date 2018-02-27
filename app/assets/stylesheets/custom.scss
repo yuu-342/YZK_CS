@@ -130,15 +130,17 @@
 /* header */
 @media screen and (max-width:479px){
   header {
-  min-height: 40px !important;
+  min-height: 5% !important;
   width: 100%;
   padding-right: 10px;
   position: fixed;
   background-color: white;
+  box-shadow: 0 0.3px 0.5px lightgray;
   }
 
   img.logo {
-  height: 40px;
+  max-height: 40px;
+  width: auto;
 }
 }
 
