@@ -1,6 +1,5 @@
-<header class="navbar navbar-fixed-top"><!-- アス比が変わっても崩れないように要css調整 文字の色　-->
-  <div id="nav-drawer">
-    <%= link_to image_tag("Yzk-Gym-logo2.svg", alt:"Yzk-Gym-logo", :class => "logo"),
+<header class="navbar navbar-fixed-top"><!-- ハンバーガーメニューを開いたときにうまく表示されない -->
+    <%= link_to image_tag(image_path("Yzk-Gym-logo2.svg"), alt:"Yzk-Gym-logo", :class => "logo"),
                 root_url %>
     <input id="nav-input" type="checkbox" class="nav-unshown">
     <label id="nav-open" for="nav-input"><span></span></label>

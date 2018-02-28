@@ -1,6 +1,18 @@
 <footer>
-  <div>
+  <div class="footer_area">
+  <div class="footer1">
     <ul>企業情報</ul>
-    <%= link_to "企業概要", about_path%>
+    <ul><%= link_to "企業概要", about_path %></ul>
+    <ul><%= link_to "業績紹介", work_path %></ul>
+  </div>
+  <div class="footer2">
+    <ul><%= link_to "ニュース", news_path %></ul>
+    <ul><%= link_to "採用情報", recruit_path %></ul>
+    <ul><%= link_to "人材育成", trainning_path %><ul>
+  </div>
+  <div class="footer3">
+    <ul><%= link_to "プライバシーポリシー" ,"#" %></ul>
+    <ul><%= link_to "サイトのご案内" ,"#" %></ul>
+  </div>
   </div>
 </footer>
