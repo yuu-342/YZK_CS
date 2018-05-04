@@ -1,11 +1,9 @@
-@import "bootstrap-sprockets";
-@import "bootstrap";
-@import "custom.scss";
+@import "mixin";
 
 // @mixin
 
 @mixin item_box {
-      height:250px;
+      height:auto;
 }
 
 // body

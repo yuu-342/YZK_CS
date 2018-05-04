@@ -1,7 +1,7 @@
 @import "mixin";
 
 /*  footer  */
-@media screen and (max-width:479px){
+@media screens and (max-width:479px){
   footer {
     background-color: #283593;
     ul { // リセット用(bootstrapが当たっちゃうので)

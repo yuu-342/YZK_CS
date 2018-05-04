@@ -1,0 +1,180 @@
+@import "mixin";
+
+
+/* universal */
+
+@media screen and (max-width:479px){
+  body {
+    background-color: white;
+    .container {
+      margin-top: 40px;
+      padding: 0 0 !important ;
+      height:100vh;
+      width: 100vw;
+    }
+  }
+
+
+  .session_image {
+    width: auto;
+    height: auto;
+    max-width: 100%;
+    max-height: 100%;
+  }
+
+  .session_btn {
+    position: absolute;
+    padding-top: 5px;
+    left: 0;
+    right: 0;
+    bottom: 10px;
+    margin: auto;
+    border-top: 1px solid lightgray;
+  }
+
+  .tweetbtn{
+    position: absolute;
+    right:30px;
+    bottom: 10px;
+  }
+
+  /* HOME画面 */
+
+  .top {
+    position: relative;
+    display: inline-block;
+    animation: fadeIn 2s ease 0s 1 normal;
+      -webkit-animation: fadeIn 2s ease 0s 1 normal;
+  .top_image{
+      object-fit: cover;
+      height: 40%;
+      max-width:100%;
+    }
+  h1 {
+    position: absolute;
+    text-align: left;
+    bottom: 50%;
+    left: 50px;
+    font-family: serif;
+    color: white;
+    font-size: 20px;
+    z-index: 50;
+    }
+  p {
+    position: absolute;
+    top: 50%;
+    right: 50px;
+    font-family: serif;
+    color: white;
+    font-size: 15px;
+    }
+  .about_btn {
+    position: absolute;
+    bottom: 50px;
+    right: 50px;
+    font-size: 10px;
+    font-family: serif;
+    padding: 10px;
+    background-color: transparent;
+    color: white;
+    border-color: white;
+    border: medium solid white;
+    border-radius: 20px 20px 20px 20px /20px 20px 20px 20px;
+    }
+  }
+
+
+
+/* NEWS */
+
+.news_area {
+  margin-top: 10px;
+  padding: 0 10px 0;
+  height:250px;
+  .news_area2 {
+    margin: 5px 10px;
+    height: 230px;
+    background-color: white;
+    border: 1px solid lightgray;
+    border-radius: 5px;
+    box-shadow: 2px 3px 2px -1px #ccc;
+    .news_list {
+      padding-left: 0;
+      line-height: 15px;
+      height:auto;
+    }
+    .news_title {
+      margin-top: 15px !important;
+      margin-bottom: 15px !important;
+      padding-left: 20px;
+      font-size: 20px;
+      font-family: sans-serif;
+      color: #283593;
+      text-align: left;
+    }
+    li.news_item {
+      margin-top: 10px;
+      margin-left: 20px;
+      margin-right: 30px;
+      text-align: left;
+      list-style: none;
+      font-size: 12px;
+      border-bottom: 1px solid lightgray;
+    }
+  }
+}
+
+  /* 企業概要 */
+
+  .about_area {
+    @include box;
+    .about_area2{
+      @include content_area;
+      .about_title {
+        @include title;
+      }
+    }
+  }
+
+  /* 活動内容 */
+
+  .work_area {
+    @include box;
+    .work_area2{
+      @include content_area;
+      .work_title {
+        @include title;
+      }
+    }
+  }
+
+  /* 採用情報 */
+
+  .recruit_area {
+    @include box;
+    .recruit_area2 {
+      @include content_area;
+      .recruit_title {
+        @include title;
+      }
+    }
+  }
+
+  /* 研修制度 いらない */
+
+  .trainning_area {
+    @include box;
+    .trainning_area2 {
+      @include content_area;
+      .trainning_title {
+        @include title;
+      }
+    }
+  }
+}
+
+/* debug */
+.debug_dump {
+  position: relative;
+  margin-top: auto;
+}
