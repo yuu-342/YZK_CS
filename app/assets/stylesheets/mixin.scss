@@ -9,15 +9,17 @@
 @mixin title{
   margin-left: 10px !important;
   margin-right: 50px;
+  padding-left: 10px;
   margin: 20px;
   font-size: 20px;
   font-family: 'Hiragino Kaku Gothic ProN', 'ヒラギノ角ゴ ProN W3', Meiryo, メイリオ, Osaka, 'MS PGothic', arial, helvetica, sans-serif;
   color: #283593;
   text-align: left;
+  border-left: 3px solid #283593;
 }
 
 @mixin box {
-  height: 510px;
+  height: auto;
   padding: 0 10px 0;
 }
 
