@@ -1,6 +1,4 @@
-@import "bootstrap-sprockets";
-@import "bootstrap";
-
+@import "mixin";
 
 .title {
   position: relative;
@@ -206,4 +204,3 @@
     z-index: auto;
   }
 }
-
