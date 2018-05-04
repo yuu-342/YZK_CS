@@ -1,0 +1,87 @@
+@import "mixin";
+
+
+@media screen and (min-width:480px){
+  .title {
+    position: relative;
+  }
+
+  .title h3 {
+    position: absolute;
+    color: white;
+    font-weight: bold;
+    font-size: 2em;
+    top: 0;
+    left: 15px;
+  }
+
+  .title_image {
+    width: 100%;
+  }
+
+  /* 募集要項テーブル */
+
+  .recruitment_table {
+    width: 90%;
+    margin: 0 auto;
+    border-collapse: collapse;
+  }
+  .recruitment_table th , td {
+    font-size: 100%;
+    display: block;
+    text-align: left
+  }
+  .recruitment_table th {
+    color: white;
+    background-color: #5C6BC0;
+    padding: 10px;
+  }
+  .recruitment_table td {
+    padding: 10px 10px 25px 10px ;
+  }
+
+
+  /*  人材育成方針  */
+
+  .policy_area {
+    height: 300px;
+    width: 100vw;
+    position:relative;
+  }
+
+  .policy_area2{
+    @include content_area2;
+  }
+
+  .policy_title {
+    position: absolute;
+  }
+
+  .policy_txt{
+    position:absolute;
+    bottom: 10px;
+    z-index: auto;
+  }
+
+  /*  研修  */
+
+  .trainings_area {
+    height: 300px;
+    width: 100vw;
+    position:relative;
+  }
+
+  .trainings_area2{
+    @include content_area2;
+  }
+
+  .trainings_title {
+    position: absolute;
+  }
+
+  .trainings_txt{
+    position:absolute;
+    bottom: 10px;
+    z-index: auto;
+  }
+}

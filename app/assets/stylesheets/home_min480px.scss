@@ -1,0 +1,173 @@
+@import "mixin";
+
+/* 480px以上の画面に適用 */
+
+@media screen and (min-width:480px){
+
+
+  /* body全体 */
+
+  body {
+    background-color: white;
+  }
+  .container {
+    margin-top: 0;
+    padding: 0 0;
+    height:100vh;
+    width: 100vw;
+  }
+
+  .session_image {
+    width: 100vw;
+    height: auto;
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+  }
+
+  .box_title{
+    position: absolute;
+    bottom: 20px;
+  }
+
+  .box_txt{
+    position: absolute;
+    bottom: 10px;
+  }
+
+  /* TOP画面 */
+
+  .top_image {
+    position: relative;
+    display: inline-block;
+    width: 100vw;
+    animation: fadeIn 2s ease 0s 1 normal;
+      -webkit-animation: fadeIn 2s ease 0s 1 normal;
+    }
+
+  .top h1 {
+    position: absolute;
+    text-align: left;
+    bottom: 55%;
+    left: 100px;
+    font-family: serif;
+    color: white;
+    font-size: 80px;
+    z-index: 50;
+    }
+  .top p {
+    position: absolute;
+    top: 50%;
+    right: 100px;
+    font-family: serif;
+    color: white;
+    font-size: 50px;
+    }
+  .about_btn {
+    position: absolute;
+    bottom: 60px;
+    right: 80px;
+    font-size: 10px;
+    font-family: serif;
+    padding: 10px;
+    background-color: transparent;
+    color: white;
+    border-color: white;
+    border: medium solid white;
+    border-radius: 20px 20px 20px 20px /20px 20px 20px 20px;
+    }
+
+    /* NEWS */
+
+  .news_area {
+    margin: 20px 10px;
+    border: 1px solid black;
+
+    .news_title {
+      margin-left: 10px;
+      margin-right: 50px;
+      padding-left: 50px;
+      padding-top: 20px;
+      font-size: 50px;
+      font-family: 'Zapfino','SignPainter','Brush Script MT','Sitka Small';
+      text-align: left;
+      border-bottom: solid lightskyblue;
+    }
+
+    .news_list {
+      padding-top: 40px;
+      padding-left: 50px;
+      height: 200px;
+      text-align: left;
+      list-style: none;
+      font-size: 15px;
+      overflow-y: scroll;
+      white-space: nowrap;
+    }
+
+    .news_list p {
+
+    }
+  }
+
+  /* 企業概要 */
+
+  .about_area {
+    height: 300px;
+    width: 100vw;
+    position:relative;
+    .about_area2{
+      @include content_area2;
+      .about_title {
+        position: absolute;
+      }
+    }
+  }
+
+  /* 活動内容 */
+
+  .work_area {
+    height: 300px;
+    width: 100vw;
+    position:relative;
+    .work_area2{
+      @include content_area2;
+      .work_title {
+        position: absolute;
+      }
+    }
+  }
+
+  /* 採用情報 */
+
+  .recruit_area {
+    height: 300px;
+    width: 100vw;
+    position:relative;
+    .recruit_area2{
+      @include content_area2;
+      .recruit_title {
+        position: absolute;
+    }
+  }
+}
+
+  /* 研修制度　あとで消す */
+
+  .trainning_area {
+    height: 300px;
+    width: 100vw;
+    position:relative;
+    .trainning_area2{
+      @include content_area2;
+      .trainning_title {
+        position: absolute;
+      }
+      .box_txt{
+        position:absolute;
+        bottom: 10px;
+        z-index: auto;
+      }
+    }
+  }
+}
