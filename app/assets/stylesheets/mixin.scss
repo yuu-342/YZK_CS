@@ -1,0 +1,51 @@
+@import "bootstrap-sprockets";
+@import "bootstrap";
+
+
+
+/*mixin*/
+
+  /*  max-width :479px */
+@mixin title{
+  margin-left: 10px !important;
+  margin-right: 50px;
+  padding-left: 10px;
+  margin: 20px;
+  font-size: 20px;
+  font-family: 'Hiragino Kaku Gothic ProN', 'ヒラギノ角ゴ ProN W3', Meiryo, メイリオ, Osaka, 'MS PGothic', arial, helvetica, sans-serif;
+  color: #283593;
+  text-align: left;
+  border-left: 3px solid #283593;
+}
+
+@mixin box {
+  height: auto;
+  padding: 0 10px 0;
+}
+
+@mixin content_area{
+  position:relative;
+  margin: 5px 10px;
+  height: 500px;
+  background-color: white;
+  text-align: center;
+  border: 1px solid lightgray;
+  background: #fff;
+  border-radius: 5px;
+  box-shadow: 2px 3px 2px -1px #ccc;
+}
+
+
+    /*  min-width:480px  */
+
+@mixin content_area2{
+  position:relative;
+  margin: 5px 10px;
+  height: 300px;
+  background-color: white;
+  text-align: center;
+  border: 1px solid lightgray;
+  background: #fff;
+  border-radius: 5px;
+  box-shadow: 2px 3px 2px -1px #ccc;
+}
