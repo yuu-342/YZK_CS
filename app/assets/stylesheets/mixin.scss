@@ -5,6 +5,13 @@
 
 /*mixin*/
 
+@mixin footer{
+  display: table-cell;
+  line-height: 10px;
+  padding-top:20px;
+  font-size: 10px;
+}
+
   /*  max-width :479px */
 @mixin title{
   margin-left: 10px !important;
