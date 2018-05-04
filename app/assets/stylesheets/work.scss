@@ -1,7 +1,100 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
+@import "custom.scss";
 
+// @mixin
 
-.test{
-  color:blue;
+@mixin item_box {
+      height:250px;
+}
+
+// body
+
+@media screen and(max-width:479px){
+  .work_top{
+  position:relative;
+  height: auto;
+  width:100vw;
+    .dance{
+      position: relative;
+      height: auto;
+      width: 100%;
+    }
+    .work_item{
+      color: aliceblue;
+      #dance{
+        color: #80D8FF
+      }
+    }
+  }
+
+  .txt_box{
+  }
+
+  .work_txt{
+    padding: 30px 20px;
+    bottom: 10px;
+    right: 20px;
+    font-size: 14px;
+  }
+
+  .content_title{
+    position:absolute;
+    margin-top: 0;
+    top: 20px;
+    left: 20px;
+    font-size: 25px;
+    border-bottom: 1px solid black;
+    color: white;
+  }
+
+  .work_item{
+    position:absolute;
+    font-size: 10px;
+    bottom: 10px;
+    right: 20px;
+    list-style: none;
+  }
+
+  .box_title{
+    @include title;
+    padding-left: 10px;
+    border-left: 3px solid #283593;
+  }
+
+  .item_box1{
+      @include item_box;
+    .video{
+      padding-top: 20px;
+      height: auto;
+      width: 100%;
+    }
+  }
+
+  .item_box2{
+    @include item_box;
+  }
+
+  .item_box3{
+    @include item_box;
+  }
+
+  .item_contena{
+    @include content_area;
+    height:auto !important;
+    margin: 20px 20px;
+    .text {
+      padding: 20px;
+      text-align: left;
+      line-height: 20px;
+    }
+    .studying2{
+      height: auto;
+      width: 100%;
+    }
+    .Js{
+      height: auto;
+      width: 100%;
+    }
+  }
 }
