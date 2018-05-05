@@ -23,8 +23,8 @@
   }
 
   .session_btn {
-    position: absolute;
-    padding-top: 5px;
+    position: relative;
+    padding-top: 10px;
     left: 0;
     right: 0;
     bottom: 10px;
@@ -47,7 +47,7 @@
       -webkit-animation: fadeIn 2s ease 0s 1 normal;
   .top_image{
       object-fit: cover;
-      height: 40%;
+      height: auto;
       max-width:100%;
     }
   h1 {
@@ -133,6 +133,9 @@
       .about_title {
         @include title;
       }
+      .box_txt{
+        @include txt;
+      }
     }
   }
 
@@ -145,6 +148,9 @@
       .work_title {
         @include title;
       }
+      .box_txt{
+        @include txt;
+      }
     }
   }
 
@@ -156,6 +162,9 @@
       @include content_area;
       .recruit_title {
         @include title;
+      }
+      .box_txt{
+        @include txt;
       }
     }
   }

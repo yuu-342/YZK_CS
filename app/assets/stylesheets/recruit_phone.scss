@@ -24,10 +24,8 @@
 @media screen and (max-width:479px) {
   .recruitment_area {
     @include box;
-    height: 610px;
     .recruitment_area2 {
       @include content_area;
-      height: 600px;
       .recruitment_title {
         @include title;
       }
@@ -59,35 +57,28 @@
   /*  人材育成方針  */
   .policy_area {
     @include box;
-    height: 230px;
     .policy_area2 {
       @include content_area;
-      height: 220px;
       .policy_title {
         @include title;
       }
+      .policy_txt {
+        @include txt;
+      }
     }
-  }
-
-  .policy_txt{
-    text-align: left;
-    padding: 10px 15px;
   }
 
 
   /*  研修  */
   .trainings_area {
     @include box;
-    height: 860px;
     .trainings_area2 {
       @include content_area;
-      height: 850px;
       .trainings_title {
         @include title;
       }
       .trainings_txt{
-        text-align: left;
-        padding: 5px 10px ;
+        @include txt;
       }
     }
   }
