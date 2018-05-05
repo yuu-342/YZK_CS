@@ -1,2 +1,47 @@
-<h1>StaticPages#work</h1>
-<p>Find me in app/views/static_pages/work.html.erb</p>
+<session>
+  <div class="work_top"><!-- ここら辺は周りと合わせる-->
+    <% @page_title = "活動内容" %>
+    <%= image_tag(image_path("dance2"), alt:"dance2", :class=> "dance") %>
+    <h1 class="content_title">活動内容</h1>
+  </div>
+</session>
+<session class ="txt_box">
+  <p class="work_txt">
+    　私たちは、どんなことも本気で取り組み、楽しむことによって日々成長し続け、
+    その過程で得たものを活かし、新たなことに挑戦し続けています。
+  </p>
+</session>
+<session class="item_box1">
+  <div class="item_contena">
+    <h1 class="box_title">全力で楽しむ</h1>
+    <div class="video">
+      <iframe width=auto height=auto
+      src="https://www.youtube.com/embed/3rnlNEetQgQ?rel=0" frameborder="0"
+      allow="autoplay; encrypted-media" allowfullscreen></iframe>
+    </div>
+    <p class="text">
+      　自主練習やスタジオ練習、合宿を通して大人になるにつれ忘れていった、
+      何かに本気になることの苦労や楽しさ、そして”ヲタクとしてステージに立つこと”とは
+      どういうことなのかを追求しました。そこでの経験は私たちの”どのように行動したいか”という
+      行動理念の礎となっています。</p>
+  </div>
+</session>
+<session class="item_box2">
+  <div class="item_contena">
+    <h1 class="box_title">楽しいを知る</h1>
+    <%= image_tag(image_path("Js"), alt:"Js", :class => "Js")  %>
+    <p class="text">
+      　異なる文化に対しても、とにかくやってみるという気持ちを持って積極的にふれあい、
+      自分たちの新たな"楽しい"を生み出し続けています。</p>
+  </div>
+</session>
+<session class="item_box3">
+  <div class="item_contena">
+    <h1 class="box_title">楽しいをつくる</h1>
+    <%= image_tag(image_path("study2"), alt:"study2", :class => "studying2") %>
+    <p class="text">
+      　私たちは与えられたものをただ楽しむだけに留まらず、周囲の人々からも"面白い","楽しい"と感じられるような
+      モノ作りにも取り組みたいと考えており、多くの人と"楽しい"という気持ちを共有できるような活動を目指しています。
+    </p>
+  </div>
+</session>

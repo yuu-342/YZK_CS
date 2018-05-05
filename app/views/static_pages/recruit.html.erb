@@ -1,2 +1,58 @@
-<h1>StaticPages#recruit</h1>
-<p>Find me in app/views/static_pages/recruit.html.erb</p>
+<body>
+  <div class="title">
+    <% @page_title = "採用情報" %>
+    <%= image_tag(image_path("recruit.jpg"), alt:"recruit", :class => "title_image") %>
+    <h3>採用情報<h3>
+  </div>
+  <section class="recruitment_area">
+  <div class="recruitment_area2">
+    <h1 class="recruitment_title"><span id="title_txt">募集要項</span></h1>
+    <table class="recruitment_table">
+        <tr>
+          <th>応募資格</th>
+          <td>ライブを楽しみたい方</td>
+        </tr>
+        <tr>
+          <th>募集職種</th>
+          <td>楽しいライブのヲタク</td>
+        </tr>
+        <tr>
+          <th>勤務地</th>
+          <td>ライブハウス<br>
+          コワーキングスペース<br>
+          スタジオなど</td>
+        </tr>
+        <tr>
+          <th>勤務時間</th>
+          <td>働きたい時</td>
+        </tr>
+        <tr>
+          <th>休日</th>
+          <td>休みたい時</td>
+        </tr>
+    </table>
+  </div>
+</section>
+<section class="policy_area">
+  <div class="policy_area2">
+    <h1 class="policy_title"><span id="title_txt">人材育成方針</span></h1>
+    <p class="policy_txt"><strong>『推しメンと共に成長する。』</strong><br/>
+    を人材育成の方針としております。我々の推しメンである柚希未結の成長と共に、自分自身もライブや研修を通して成長することで自律的な人材、
+    多方面で活躍できる人材の育成に取り組んでいます。</p>
+  </div>
+</section>
+<section class="trainings_area">
+  <div class="trainings_area2">
+    <h1 class="trainings_title"><span id="title_txt">研修</span></h1>
+    <p class="trainings_txt"></p>
+    <%= image_tag(image_path("furikopi-training.jpg"), alt:"furikopi", :class => "session_image") %>
+    <p class="trainings_txt">・フリコピ研修<br/>
+    日々のライブをより楽しむことができるように各自での練習に加え、スタジオや公園、ゲームセンターなどでフリコピの練習をします。<br/>
+    研修実績：第一回幻影ギャラクティカフリコピ選手権出場</p>
+    <hr>
+    <%= image_tag(image_path("programming-training.jpg"), alt:"programming", :class => "session_image") %>
+    <p class="trainings_txt">・プログラミング研修<br/>
+    プログラミングの基礎からサイトを制作できるようになるまでをチームでの開発を通して学びます。<br/>
+    研修実績：本コーポレートサイトの制作</p>
+  </div>
+</section>

@@ -1,18 +1,15 @@
 <footer>
-  <div class="footer_area">
-  <div class="footer1">
-    <ul>企業情報</ul>
-    <ul><%= link_to "企業概要", about_path %></ul>
-    <ul><%= link_to "業績紹介", work_path %></ul>
+  <div class="footer_content">
+    <div class="footer_item">
+      <ul><%= link_to "企業概要", company_path %></ul>
+      <ul><%= link_to "活動内容", work_path %></ul>
+      <ul><%= link_to "採用情報", recruit_path %></ul>
+    </div>
+    <div class="footer_item">
+      <ul><%= link_to "プライバシーポリシー" , privacy_path %></ul>
+      <ul><%= link_to "サイトのご案内" ,"#" %></ul>
+    </div>
   </div>
-  <div class="footer2">
-    <ul><%= link_to "ニュース", news_path %></ul>
-    <ul><%= link_to "採用情報", recruit_path %></ul>
-    <ul><%= link_to "人材育成", trainning_path %><ul>
-  </div>
-  <div class="footer3">
-    <ul><%= link_to "プライバシーポリシー" ,"#" %></ul>
-    <ul><%= link_to "サイトのご案内" ,"#" %></ul>
-  </div>
-  </div>
+  <div class="footer_logo"></div>
+  <p class="footer_copy">© Yzk-Gym LLC.</p>
 </footer>

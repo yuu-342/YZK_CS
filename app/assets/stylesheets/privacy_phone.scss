@@ -1,0 +1,15 @@
+@import "mixin";
+
+
+  .privacy {
+    margin: 50px 20px;
+    .policy {
+      font-size: 30px;
+    }
+    .using {
+      font-size: 20px;
+    }
+    li {
+      list-style: none;
+    }
+  }

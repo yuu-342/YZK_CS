@@ -1,5 +1,6 @@
 <div class="top" ><!--  とりあえず画像とか決まるまで代用 -->
-  <%= image_tag("YZKmen1.jpeg", alt:"YZKmen", :class => "top_image") %>
+  <% @page_title = "楽しいを探しに行こう。" %>
+  <%= image_tag(image_path("YZKmen1.jpeg"), alt:"YZKmen", :class => "top_image") %>
   <h1>楽しいを探しに行こう。</h1>
   <p>Fun is always nearby us.</p>
   <a href="/about" class="about_btn">About us</a><!-- contactボタンを作るかも　5/9 -->
@@ -25,24 +26,39 @@
 </section>
 <section class="about_area"><!-- フォント未確定　シャドーの確認-->
   <div class="about_area2">
+<<<<<<< HEAD
     <h1 class="about_title"><span id="title_txt">企業概要</span></h1>
     <%= image_tag(image_path("miu.jpg"), alt:"YZKmiu", :class => "session_image") %>
     <a class="box_title">私たちについて</a>
     <a class="box_txt">ここにずらーっとかく</a><!-- 画像を入れるか考える -->
     <div class="session_btn"><%= link_to "もっと見る", about_path %></div><!-- ボタンのデザイン -->
+=======
+    <h1 class="about_title"><%= link_to "企業概要", company_path %></h1>
+    <%= image_tag(image_path("miu.jpg"), alt:"YZKmiu", :class => "session_image") %>
+    <a>私たちについて</a>
+    <a class="box_txt">ここにずらーっとかく</a><!-- 画像を入れるか考える -->
+    <div class="session_btn"><%= link_to "もっと見る", company_path %></div><!-- ボタンのデザイン -->
+>>>>>>> develop
   </div>
 </section>
 <section class="work_area">
   <div class="work_area2">
+<<<<<<< HEAD
     <h1 class="work_title"><span id="title_txt">業績紹介</span></h1>
     <%= image_tag(image_path("omochi1.jpg"), alt:"omochi", :class => "session_image") %>
     <a class"box_title">活動内容</a>
+=======
+    <h1 class="work_title"><%= link_to "活動内容", work_path %></h1>
+    <%= image_tag(image_path("omochi1.jpg"), alt:"omochi", :class => "session_image") %>
+    <a>活動内容</a>
+>>>>>>> develop
     <a class="box_txt">ここにずらーっとかく</a>
     <div class="session_btn"><%= link_to "もっと見る", work_path %></div>
   </div>
 </section>
 <section class="recruit_area">
   <div class="recruit_area2">
+<<<<<<< HEAD
     <h1 class="recruit_title"><span id="title_txt">採用情報</span></h1>
     <%= image_tag(image_path("omochi2.jpg"), alt:"omochi", :class => "session_image") %>
     <a class="box_title">採用情報</a>
@@ -57,5 +73,12 @@
     <a class="box_title">人材育成</a>
     <a class="box_txt">ここにずらーっとかく</a>
     <div class="session_btn"><%= link_to "もっと見る", trainning_path %></div>
+=======
+    <h1 class="recruit_title"><%= link_to "採用情報", recruit_path %></h1>
+    <%= image_tag(image_path("omochi2.jpg"), alt:"omochi", :class => "session_image") %>
+    <a>採用情報</a>
+    <a class="box_txt">ここにずらーっとかく</a>
+    <div class="session_btn"><%= link_to "もっと見る", recruit_path %></div>
+>>>>>>> develop
   </div>
 </section>
