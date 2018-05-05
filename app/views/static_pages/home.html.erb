@@ -1,9 +1,6 @@
 <div class="top" ><!--  とりあえず画像とか決まるまで代用 -->
   <% @page_title = "楽しいを探しに行こう。" %>
-  <%= image_tag(image_path("YZKmen1.jpeg"), alt:"YZKmen", :class => "top_image") %>
-  <h1>楽しいを探しに行こう。</h1>
-  <p>Fun is always nearby us.</p>
-  <a href="/about" class="about_btn">About us</a><!-- contactボタンを作るかも　5/9 -->
+  <%= image_tag(image_path("recruit"), alt:"YZKmen", :class => "top_image") %>
 </div>
 <section class="news_area" >
   <div class="news_area2">
@@ -26,8 +23,8 @@
 </section>
 <section class="about_area">
   <div class="about_area2">
-    <h1 class="about_title">企業概要</h1>
-    <%= image_tag(image_path("miu.jpg"), alt:"YZKmiu", :class => "session_image") %>
+    <h1 class="about_title"><span id="title_txt">企業概要</span></h1>
+    <%= image_tag(image_path("miu"), alt:"YZKmiu", :class => "session_image") %>
     <a>私たちについて</a>
     <a class="box_txt">ここにずらーっとかく</a><!-- 画像を入れるか考える -->
     <div class="session_btn"><%= link_to "もっと見る", company_path %></div><!-- ボタンのデザイン -->
@@ -36,7 +33,7 @@
 <section class="work_area">
   <div class="work_area2">
     <h1 class="work_title">活動内容</h1>
-    <%= image_tag(image_path("omochi1.jpg"), alt:"omochi", :class => "session_image") %>
+    <%= image_tag(image_path("dance2"), alt:"omochi", :class => "session_image") %>
     <p class="box_txt">
         　私たちは、どのような事にも本気で取り組み、本気で楽しむことによって日々成長し続け、
       その過程で得た知識や経験をを活かし、新たな”楽しい”を多くの人々と共有するために挑戦し続けます。
@@ -47,7 +44,7 @@
 <section class="recruit_area">
   <div class="recruit_area2">
     <h1 class="recruit_title">採用情報</h1>
-    <%= image_tag(image_path("omochi2.jpg"), alt:"omochi", :class => "session_image") %>
+    <%= image_tag(image_path("omochi2"), alt:"omochi", :class => "session_image") %>
     <p class="box_txt">
        　共に成長し続け、どのようなことにも前向きに取り組める人材を常に求めています。
        また、多くの人々と楽しいを共有し成長するという思想に基づき、共に学び共に成長するという育成方針を掲げ、
