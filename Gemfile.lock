@@ -98,6 +98,7 @@ GEM
     public_suffix (3.0.2)
     puma (3.11.4)
     rack (2.0.5)
+    rack-simple_user_agent (0.3.0)
     rack-test (1.0.0)
       rack (>= 1.0, < 3)
     rack-user_agent (0.5.2)
@@ -193,6 +194,7 @@ DEPENDENCIES
   listen (>= 3.0.5, < 3.2)
   pg (= 0.20.0)
   puma (~> 3.7)
+  rack-simple_user_agent
   rack-user_agent
   rails (~> 5.1.4)
   sass-rails (~> 5.0)
