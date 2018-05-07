@@ -33,18 +33,20 @@
     <%= image_tag(image_path("miu"), alt:"YZKmiu", :class => "session_image") %>
     <a>私たちについて</a>
     <a class="box_txt">ここにずらーっとかく</a><!-- 画像を入れるか考える -->
-    <div class="session_btn"><%= link_to "もっと見る", company_path %></div><!-- ボタンのデザイン -->
+    <div class="session_btn"><%= link_to "詳しく見る", company_path, :class => "btn" %></div><!-- ボタンのデザイン -->
   </div>
 </section>
 <section class="work_area">
   <div class="work_area2">
     <h1 class="work_title">活動内容</h1>
-    <%= image_tag(image_path("dance2"), alt:"omochi", :class => "session_image") %>
+    <%= image_tag(image_path("dance2"), alt:"dance", :class => "session_image") %>
     <p class="box_txt">
         　私たちは、どのような事にも本気で取り組み、本気で楽しむことによって日々成長し続け、
-      その過程で得た知識や経験をを活かし、新たな”楽しい”を多くの人々と共有するために挑戦し続けます。
+      その過程で得た知識や経験を活かし、新たな”楽しい”を多くの人々と共有するために挑戦し続けます。
     </p>
-    <div class="session_btn"><%= link_to "もっと見る", work_path %></div>
+    <div class="session_btn">
+        <%= link_to "詳しく見る", work_path, :class => "btn"%>
+    </div>
   </div>
 </section>
 <section class="recruit_area">
@@ -54,6 +56,6 @@
     <p class="box_txt">
       私たちと一緒に"楽しい"をつくる意欲のある方の応募をお待ちしております。
     </p>
-    <div class="session_btn"><%= link_to "もっと見る", recruit_path %></div>
+    <div class="session_btn"><%= link_to "詳しく見る", recruit_path, :class => "btn" %></div>
   </div>
 </section>

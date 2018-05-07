@@ -19,7 +19,8 @@
   padding-left: 10px;
   margin: 20px;
   font-size: 20px;
-  font-family: 'Hiragino Kaku Gothic ProN', 'ヒラギノ角ゴ ProN W3', Meiryo, メイリオ, Osaka, 'MS PGothic', arial, helvetica, sans-serif;
+  font-family:"Midashi Go MB31","ヒラギノ角ゴ Pro W3",Hiragino Kaku Gothic Pro,
+  " メイリオ",Meiryo,Osaka," ＭＳ Ｐゴシック",MS PGothic," sans-serif";
   color: #283593 !important;
   text-align: left;
   border-left: 3px solid #283593;
@@ -31,6 +32,8 @@
   font-size: 15px;
   color: black;
   line-height: 30px;
+  font-family :"Midashi Go MB31","ヒラギノ角ゴ Pro W3",Hiragino Kaku Gothic Pro,
+  " メイリオ",Meiryo,Osaka," ＭＳ Ｐゴシック",MS PGothic," sans-serif";
 }
 
 @mixin box {
@@ -43,7 +46,7 @@
   margin: 10px 10px;
   height: auto;
   background-color: white;
-  text-align: center;
+  text-align:right;
   border: 1px solid lightgray;
   background: #fff;
   border-radius: 5px;
@@ -58,7 +61,7 @@
   margin: 5px 10px;
   height: 300px;
   background-color: white;
-  text-align: center;
+  text-align: right;
   border: 1px solid lightgray;
   background: #fff;
   border-radius: 5px;
