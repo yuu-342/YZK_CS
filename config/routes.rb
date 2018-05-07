@@ -7,4 +7,6 @@ Rails.application.routes.draw do
   get '/recruit', to: 'static_pages#recruit'
   get '/work', to: 'static_pages#work'
   get '/privacy', to: 'static_pages#privacy'
+
+  root 'index#index'
 end
