@@ -5,11 +5,22 @@
     margin: 50px 20px;
     .policy {
       font-size: 30px;
+      border-bottom: solid 1px #283593;
     }
     .using {
       font-size: 20px;
+      padding-top: 20px;
+    }
+    .title {
+      padding-top: 20px;
+    }
+    .txt {
+      padding: 20px 10px;
+      text-align: left;
+      font-size: 16px;
+      line-height: 25px;
     }
     li {
-      list-style: none;
+
     }
   }
