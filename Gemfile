@@ -29,9 +29,13 @@ gem 'jbuilder', '~> 2.5'
 # gem 'redis', '~> 3.0'
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
-
+# pcかmobileか判別
+gem 'rack-user_agent'
+# タブレットがうまく判別されなかったので追加
+gem 'rack-simple_user_agent'
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
+
 
 group :development, :test do
   gem 'sqlite3'
@@ -57,4 +61,3 @@ end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
-
