@@ -90,10 +90,10 @@
 .news_area {
   margin-top: 10px;
   padding: 0 10px 0;
-  height:250px;
+  height:430px;
   .news_area2 {
     margin: 5px 10px;
-    height: 230px;
+    height: 410px;
     background-color: white;
     border: 1px solid lightgray;
     border-radius: 5px;
@@ -118,8 +118,12 @@
       margin-right: 30px;
       text-align: left;
       list-style: none;
-      font-size: 12px;
+      font-size: 14px;
       border-bottom: 1px solid lightgray;
+
+      span ,p.news_subtitle {
+        color: #283593;
+      }
     }
   }
 }
