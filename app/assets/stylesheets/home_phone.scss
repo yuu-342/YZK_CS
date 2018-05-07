@@ -23,8 +23,8 @@
   }
 
   .session_btn {
-    position: absolute;
-    padding-top: 5px;
+    position: relative;
+    padding-top: 10px;
     left: 0;
     right: 0;
     bottom: 10px;
@@ -47,7 +47,7 @@
       -webkit-animation: fadeIn 2s ease 0s 1 normal;
   .top_image{
       object-fit: cover;
-      height: 40%;
+      height: auto;
       max-width:100%;
     }
   h1 {
@@ -90,10 +90,10 @@
 .news_area {
   margin-top: 10px;
   padding: 0 10px 0;
-  height:250px;
+  height:430px;
   .news_area2 {
     margin: 5px 10px;
-    height: 230px;
+    height: 410px;
     background-color: white;
     border: 1px solid lightgray;
     border-radius: 5px;
@@ -118,8 +118,12 @@
       margin-right: 30px;
       text-align: left;
       list-style: none;
-      font-size: 12px;
+      font-size: 14px;
       border-bottom: 1px solid lightgray;
+
+      span ,p.news_subtitle {
+        color: #283593;
+      }
     }
   }
 }
@@ -133,6 +137,9 @@
       .about_title {
         @include title;
       }
+      .box_txt{
+        @include txt;
+      }
     }
   }
 
@@ -145,6 +152,9 @@
       .work_title {
         @include title;
       }
+      .box_txt{
+        @include txt;
+      }
     }
   }
 
@@ -156,6 +166,9 @@
       @include content_area;
       .recruit_title {
         @include title;
+      }
+      .box_txt{
+        @include txt;
       }
     }
   }
