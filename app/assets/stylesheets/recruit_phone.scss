@@ -82,6 +82,13 @@
       .trainings_title {
         @include title;
       }
+      .trainings_subtitle {
+        @include txt;
+        font-size: 18px;
+        margin: 0;
+        padding-bottom: 0;
+        font-weight: bold;
+      }
       .trainings_txt{
         @include txt;
       }
