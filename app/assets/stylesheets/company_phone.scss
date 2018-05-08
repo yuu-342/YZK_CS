@@ -33,11 +33,13 @@
     font-size: 1.2em;
     color: #283593;
     margin-left: 1.5em;
+    margin-right: 1em;
     text-align: left;
   }
 
   .history-description {
     margin-left: 2em;
+    margin-right: 1em;
     text-align: left;
   }
 
@@ -76,9 +78,10 @@
   /*  沿革  */
   .history_area {
     @include box;
+    margin-bottom: 3em;
     .history_area2 {
       @include content_area;
-      padding-bottom: 1em;
+      padding-bottom: 1.5em;
       .history_title {
         @include title;
       }
@@ -91,6 +94,7 @@
   /* オフィス紹介 */
   .office_area {
     @include box;
+    margin-bottom: 3em;
     .office_area2 {
       @include content_area;
       .office_title {
@@ -106,6 +110,7 @@
   /*  研修  */
   .company_info_area {
     @include box;
+    margin-bottom: 2em;
     .company_info_area2 {
       @include content_area;
       .company_info_title {
