@@ -24,8 +24,8 @@
 
   .session_btn {
     display: inline-block;
-    margin-right: 15px;
-    margin-bottom: 15px;
+    margin-right: 20px;
+    margin-bottom: 20px;
     padding: 0.05em 0.2em;
     right:10px;
     text-decoration: none;
@@ -68,7 +68,7 @@
   /* NEWS */
 
   .news_area {
-    margin-top: 10px;
+    margin-top: 15px;
     padding: 0 10px 0;
     height: auto;
     .news_area2 {
@@ -99,10 +99,10 @@
         margin-right: 30px;
         text-align: left;
         list-style: none;
-        font-size: 14px;
+        font-size: 12px;
         border-bottom: 1px solid lightgray;
       }
-      span ,p.news_subtitle {	
+      span ,p.news_subtitle {
         font-size: 16px;
         font-weight: bold;
         color: #283593;
