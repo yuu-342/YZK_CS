@@ -3,43 +3,46 @@
   <% @page_title = "企業概要" %>
   <h3>企業概要</h3>
 </div>
-
-<section class="policy_area">
-  <div class="policy_area2">
-    <h1 class="recruitment_title"><span id="title_txt">企業理念</span></h1>
-    <p>
-      本気で楽しむ
-    </p>
-    <p>
-      "消費"の意味の楽しむことも面白いと思うけど、"生産的"な楽しみ方が好き。遊びも適当にじゃなくて本気でやる。それが一番面白い。そういう風に楽しむ人が増えたらいいなと思う。
-    </p>
+<section>
+  <!--ここに企業理念について書く-->
+</section>
+<section class="history_area">
+  <div class="history_area2">
+    <h1 class="history_title"><span id="title_txt">沿革</span></h1>
+    <p class="history-date">2016/XX/XX</p>
+    <p class="history-description">「柚希ジム」発足。</p>
+    <hr class="history-line">
+    <p class="history-date">2016/XX/XX</p>
+    <p class="history-description">幻影ギャラクティカフリコピ選手権出場。</p>
+    <hr class="history-line">
+    <p class="history-date">2016/XX/XX</p>
+    <p class="history-description">柚希ジム エンジニアリング部門設立。</p>
+    <hr class="history-line">
+    <p class="history-date">2018/05/09</p>
+    <p class="history-description">「合同会社 柚希ジム」設立。</p>
   </div>
 </section>
-<section class="policy_area">
-  <div class="policy_area2">
-    <h1 class="policy_title"><span id="title_txt">沿革</span></h1>
-    <p class="policy_txt">ここにいついつなになにを書いていく。</p>
+<section class="office_area">
+  <div class="office_area2">
+    <h1 class="office_title"><span id="title_txt">オフィス紹介</span></h1>
+    <%= image_tag(image_path("office_varon"), alt:"varon", :class => "session_image") %>
+    <p class="office_txt">各地のライブハウスを中心に活動しております。</p>
   </div>
 </section>
-<section class="policy_area">
-  <div class="policy_area2">
-    <h1 class="policy_title"><span id="title_txt">オフィス紹介</span></h1>
-    <p class="policy_txt">オフィス画像数枚と説明。なぜこういうオフィスなのか。</p>
-  </div>
-</section>
-<section class="trainings_area">
-  <div class="trainings_area2">
-    <h1 class="trainings_title"><span id="title_txt">会社情報</span></h1>
-    ここに地図。
-    <table class="recruitment_table">
+<section class="company_info_area">
+  <div class="company_info_area2">
+    <h1 class="company_info_title"><span id="title_txt">会社情報</span></h1>
+    <div class="ggmap"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3241.628981291859!2d139.6965670149577!3d35.66151168019891!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188ca9021ee8e1%3A0x52a368840fcb9299!2sWWW!5e0!3m2!1sja!2sjp!4v1525769030061" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe></div>
+    <table class="company_info_table">
       <tr>
         <th>会社名</th>
         <td>合同会社柚希ジム</br>(英文社名:Yzk-Gym LLC.)</td>
       </tr>
       <tr>
         <th>所在地</th>
-        <td>〒005-0009</br>
-          柚希未結の出演するところ</td>
+        <td>〒150-0042</br>
+          東京都渋谷区宇田川町13−17 ライズビル</br>
+          渋谷WWWでぼくと握手！</td>
       </tr>
       <tr>
         <th>設立</th>
@@ -51,7 +54,9 @@
       </tr>
       <tr>
         <th>事業内容</th>
-        <td>柚希未結を応援する</br>Webサイト、Webサービスの企画・開発・運営</br>スポッチャ</td>
+        <td>・柚希未結さんを応援する</br>
+          ・Webサイト、サービスの企画・開発</br>
+          ・スポッチャ</td>
       </tr>
     </table>
   </div>

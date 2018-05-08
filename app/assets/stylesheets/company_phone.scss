@@ -1,0 +1,142 @@
+@import "mixin";
+
+/*  募集要項  */
+@media screen and (max-width:479px) {
+
+  .title {
+    position: relative;
+  }
+
+  .title h3 {
+    position: absolute;
+    color: white;
+    font-weight: bold;
+    font-size: 2em;
+    top: 90%;
+    left: 50%;
+    -ms-transform: translate(-50%,-50%);
+    -webkit-transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%);
+    margin:0;
+    padding:0;
+  }
+
+  .title_image {
+    width: 100%;
+  }
+
+  .history-line {
+    width: 90%;
+  }
+
+  .history-date {
+    font-size: 1.2em;
+    color: #283593;
+    margin-left: 1.5em;
+    margin-right: 1em;
+    text-align: left;
+  }
+
+  .history-description {
+    margin-left: 2em;
+    margin-right: 1em;
+    text-align: left;
+  }
+
+  .recruitment_area {
+    @include box;
+    .recruitment_area2 {
+      @include content_area;
+      .recruitment_title {
+        @include title;
+      }
+    }
+  }
+
+  /* 募集要項テーブル */
+
+  .company_info_table {
+    width: 90%;
+    margin: 20px auto;
+    border-collapse: collapse;
+  }
+  .company_info_table th , td {
+    font-size: 100%;
+    display: block;
+    text-align: left
+  }
+  .company_info_table th {
+    color: white;
+    background-color: #5C6BC0;
+    padding: 10px;
+  }
+  .company_info_table td {
+    padding: 10px 10px 25px 10px ;
+  }
+
+
+  /*  沿革  */
+  .history_area {
+    @include box;
+    margin-bottom: 3em;
+    .history_area2 {
+      @include content_area;
+      padding-bottom: 1.5em;
+      .history_title {
+        @include title;
+      }
+      .history_txt {
+        @include txt;
+      }
+    }
+  }
+
+  /* オフィス紹介 */
+  .office_area {
+    @include box;
+    margin-bottom: 3em;
+    .office_area2 {
+      @include content_area;
+      .office_title {
+        @include title;
+      }
+      .office_txt {
+        @include txt;
+      }
+    }
+  }
+
+
+  /*  研修  */
+  .company_info_area {
+    @include box;
+    margin-bottom: 2em;
+    .company_info_area2 {
+      @include content_area;
+      .company_info_title {
+        @include title;
+      }
+      .company_info_txt{
+        @include txt;
+      }
+    }
+  }
+
+  .ggmap {
+    position: relative;
+    padding-bottom: 56.25%;
+    padding-top: 30px;
+    height: 0;
+    overflow: hidden;
+  }
+
+  .ggmap iframe,
+  .ggmap object,
+  .ggmap embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+}

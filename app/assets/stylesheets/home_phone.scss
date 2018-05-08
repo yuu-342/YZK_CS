@@ -85,9 +85,10 @@
       }
       .news_title {
         margin-top: 15px !important;
-        margin-bottom: 15px !important;
+        margin-bottom: 20px !important;
         padding-left: 20px;
-        font-size: 20px;
+        font-size: 22px;
+        font-weight: bold;
         font-family: sans-serif;
         color: #283593;
         text-align: left;
@@ -101,6 +102,14 @@
         font-size: 12px;
         border-bottom: 1px solid lightgray;
       }
+<<<<<<< HEAD
+=======
+      span ,p.news_subtitle {	
+        font-size: 16px;
+        font-weight: bold;
+        color: #283593;
+      }
+>>>>>>> develop
     }
   }
 
