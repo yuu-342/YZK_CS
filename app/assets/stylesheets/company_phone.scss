@@ -25,6 +25,22 @@
     width: 100%;
   }
 
+  .history-line {
+    width: 90%;
+  }
+
+  .history-date {
+    font-size: 1.2em;
+    color: #283593;
+    margin-left: 1.5em;
+    text-align: left;
+  }
+
+  .history-description {
+    margin-left: 2em;
+    text-align: left;
+  }
+
   .recruitment_area {
     @include box;
     .recruitment_area2 {
@@ -57,15 +73,30 @@
   }
 
 
-  /*  人材育成方針  */
-  .policy_area {
+  /*  沿革  */
+  .history_area {
     @include box;
-    .policy_area2 {
+    .history_area2 {
       @include content_area;
-      .policy_title {
+      padding-bottom: 1em;
+      .history_title {
         @include title;
       }
-      .policy_txt {
+      .history_txt {
+        @include txt;
+      }
+    }
+  }
+
+  /* オフィス紹介 */
+  .office_area {
+    @include box;
+    .office_area2 {
+      @include content_area;
+      .office_title {
+        @include title;
+      }
+      .office_txt {
         @include txt;
       }
     }
@@ -73,14 +104,14 @@
 
 
   /*  研修  */
-  .trainings_area {
+  .company_info_area {
     @include box;
-    .trainings_area2 {
+    .company_info_area2 {
       @include content_area;
-      .trainings_title {
+      .company_info_title {
         @include title;
       }
-      .trainings_txt{
+      .company_info_txt{
         @include txt;
       }
     }
