@@ -54,13 +54,13 @@
     list-style: none;
   }
 
-  .box_title{
-    @include title;
-    font-size: 18px;
-  }
 
   .item_box1{
       @include item_box;
+      .box_title{
+        @include title;
+        font-size: 1.4em;
+      }
     .video{
       padding-top: 20px;
       height: auto;
@@ -70,10 +70,16 @@
 
   .item_box2{
     @include item_box;
+    .box_title{
+      @include title;
+    }
   }
 
   .item_box3{
     @include item_box;
+    .box_title{
+      @include title;
+    }
   }
 
   .item_contena{
