@@ -1,0 +1,106 @@
+@import "mixin";
+
+/*  募集要項  */
+@media screen and (max-width:479px) {
+
+  .title {
+    position: relative;
+  }
+
+  .title h3 {
+    position: absolute;
+    color: white;
+    font-weight: bold;
+    font-size: 2em;
+    top: 90%;
+    left: 50%;
+    -ms-transform: translate(-50%,-50%);
+    -webkit-transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%);
+    margin:0;
+    padding:0;
+  }
+
+  .title_image {
+    width: 100%;
+  }
+
+  .recruitment_area {
+    @include box;
+    .recruitment_area2 {
+      @include content_area;
+      .recruitment_title {
+        @include title;
+      }
+    }
+  }
+
+  /* 募集要項テーブル */
+
+  .company_info_table {
+    width: 90%;
+    margin: 20px auto;
+    border-collapse: collapse;
+  }
+  .company_info_table th , td {
+    font-size: 100%;
+    display: block;
+    text-align: left
+  }
+  .company_info_table th {
+    color: white;
+    background-color: #5C6BC0;
+    padding: 10px;
+  }
+  .company_info_table td {
+    padding: 10px 10px 25px 10px ;
+  }
+
+
+  /*  人材育成方針  */
+  .policy_area {
+    @include box;
+    .policy_area2 {
+      @include content_area;
+      .policy_title {
+        @include title;
+      }
+      .policy_txt {
+        @include txt;
+      }
+    }
+  }
+
+
+  /*  研修  */
+  .trainings_area {
+    @include box;
+    .trainings_area2 {
+      @include content_area;
+      .trainings_title {
+        @include title;
+      }
+      .trainings_txt{
+        @include txt;
+      }
+    }
+  }
+
+  .ggmap {
+    position: relative;
+    padding-bottom: 56.25%;
+    padding-top: 30px;
+    height: 0;
+    overflow: hidden;
+  }
+
+  .ggmap iframe,
+  .ggmap object,
+  .ggmap embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+}
