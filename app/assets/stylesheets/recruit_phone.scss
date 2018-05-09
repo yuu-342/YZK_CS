@@ -29,6 +29,7 @@
 @media screen and (max-width:479px) {
   .recruitment_area {
     @include box;
+    margin-bottom: 3em;
     .recruitment_area2 {
       @include content_area;
       .recruitment_title {
@@ -62,6 +63,7 @@
   /*  人材育成方針  */
   .policy_area {
     @include box;
+    margin-bottom: 3em;
     .policy_area2 {
       @include content_area;
       .policy_title {
@@ -89,8 +91,12 @@
         padding-bottom: 0;
         font-weight: bold;
       }
+      .trainings_line {
+        width: 90%;
+      }
       .trainings_txt{
         @include txt;
+
       }
     }
   }
