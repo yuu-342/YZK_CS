@@ -28,18 +28,20 @@
     margin-bottom: 20px;
     padding: 0.05em 0.2em;
     right:10px;
+    line-height: 45px;
     text-decoration: none;
-    background-color: #283593;
-    border: solid 2px #283593;
+    background-color: #5C6BC0;
     border-radius: 5px;
     transition: .4s;
     &:hover {
-      background: #283593;
-      color: #283593;
+      background: #7986CB;
     }
       .btn{
         font-size: 13px;
         color: white;
+        &:active {
+          color: white;
+        }
     }
   }
 
