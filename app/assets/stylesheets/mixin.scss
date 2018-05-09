@@ -28,6 +28,7 @@
 }
 
 @mixin txt {
+  margin-bottom: 0;
   padding: 20px 15px;
   text-align: left !important;
   font-size: 15px;

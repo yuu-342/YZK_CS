@@ -3,102 +3,83 @@
 // @mixin
 
 @mixin item_box {
-      height:auto;
+  height:auto;
+  margin:0;
 }
 
 // body
 
 @media screen and(max-width:479px){
   .work_top{
-  position:relative;
-  height: auto;
-  width:100vw;
+    position:relative;
+    height: auto;
+    width:100vw;
     .dance{
       position: relative;
       height: auto;
       width: 100%;
     }
-    .work_item{
-      color: aliceblue;
-      #dance{
-        color: #80D8FF
-      }
-    }
   }
+}
 
-  .txt_box{
+
+.content_title{
+  position:absolute;
+  color: white;
+  font-weight: bold;
+  font-size: 2em;
+  top: 90%;
+  left: 50%;
+  -ms-transform: translate(-50%,-50%);
+  -webkit-transform: translate(-50%,-50%);
+  transform: translate(-50%,-50%);
+  margin:0;
+  padding:0;
+}
+
+
+.item_box1{
+  @include item_box;
+  .box_title{
+    @include title;
+    font-size: 1.4em;
   }
-
-  .work_txt{
-    padding: 30px 20px;
-    bottom: 10px;
-    right: 20px;
-    font-size: 14px;
+  .video{
+    padding-top: 20px;
+    height: auto;
+    width: 100%;
   }
+}
 
-  .content_title{
-    position:absolute;
-    margin-top: 0;
-    top: 20px;
-    left: 20px;
-    font-size: 25px;
-    border-bottom: 1px solid black;
-    color: white;
+.item_box2{
+  @include item_box;
+  .box_title{
+    @include title;
   }
+}
 
-  .work_item{
-    position:absolute;
-    font-size: 10px;
-    bottom: 10px;
-    right: 20px;
-    list-style: none;
+.item_box3{
+  @include item_box;
+  .box_title{
+    @include title;
   }
+}
 
-
-  .item_box1{
-      @include item_box;
-      .box_title{
-        @include title;
-        font-size: 1.4em;
-      }
-    .video{
-      padding-top: 20px;
-      height: auto;
-      width: 100%;
-    }
+.item_contena{
+  @include content_area;
+  margin: 20px 20px;
+  text-align: center !important;
+  .text {
+    padding: 20px;
+    text-align: left;
+    line-height: 20px;
   }
-
-  .item_box2{
-    @include item_box;
-    .box_title{
-      @include title;
-    }
+  .studying{
+    height: auto;
+    width: 100%;
   }
-
-  .item_box3{
-    @include item_box;
-    .box_title{
-      @include title;
-    }
-  }
-
-  .item_contena{
-    @include content_area;
-    height:auto !important;
-    margin: 20px 20px;
-    text-align: center !important;
-    .text {
-      padding: 20px;
-      text-align: left;
-      line-height: 20px;
-    }
-    .studying2{
-      height: auto;
-      width: 100%;
-    }
-    .Js{
-      height: auto;
-      width: 100%;
-    }
+  .Js{
+    height: auto;
+    width: 100%;
   }
 }
