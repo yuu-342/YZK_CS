@@ -5,18 +5,19 @@
   position: relative;
   }
 
-.title h3 {
-  position: absolute;
-  color: white;
-  font-weight: bold;
-  font-size: 2em;
-  top: 90%;
-  left: 50%;
-  -ms-transform: translate(-50%,-50%);
-  -webkit-transform: translate(-50%,-50%);
-  transform: translate(-50%,-50%);
-  margin:0;
-  padding:0;
+  .content_title{
+    position:absolute;
+    color: white;
+    background: rgba(0, 0, 0, 0.450);
+    font-weight: bold;
+    font-size: 2em;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%,-50%);
+    -webkit-transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%);
+    margin:0;
+    padding:0;
   }
 
 .title_image {

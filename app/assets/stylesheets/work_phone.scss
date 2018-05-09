@@ -26,9 +26,10 @@
 .content_title{
   position:absolute;
   color: white;
+  background: rgba(0, 0, 0, 0.450);
   font-weight: bold;
   font-size: 2em;
-  top: 90%;
+  top: 50%;
   left: 50%;
   -ms-transform: translate(-50%,-50%);
   -webkit-transform: translate(-50%,-50%);
