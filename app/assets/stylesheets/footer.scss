@@ -23,7 +23,8 @@
     font-size: 0.9em;
     padding-bottom: 20px;
     ul {
-      margin: 0;
+      margin-top: 1em;
+      margin-bottom: 1em;
       padding: 0;
       list-style-type: none;
       line-height: 2.5em;
@@ -43,9 +44,7 @@
 
   .footer_logo {
     display: block;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    margin-left: 40px;
+    margin: 0 auto;
     background-color: #d8d8ff;
     width: 120px;
     height: 40px;
