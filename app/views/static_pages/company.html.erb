@@ -1,69 +1,72 @@
-<body>
-<div class="title">
+<section class="company_title">
   <% @page_title = "企業概要" %>
-  <h3>企業概要</h3>
+  <h3>" Hard Enjoy "</h3>
+  <p class="company_title_description">普通にやるんじゃつまらない。</br>
+    どうせやるなら"Hard(本気)"にやろう。</br>
+    本気で遊ぶから、本気の面白さになる。
+  </p>
+</section>
+<div class="main_content_area">
+  <section class="history_area">
+    <div class="history_area2">
+      <h1 class="history_title"><span id="title_txt">沿革</span></h1>
+      <p class="history-date">2018/05/09</p>
+      <p class="history-description">「合同会社 柚希ジム」設立。</p>
+      <hr class="history-line">
+      <p class="history-date">2017/09/24</p>
+      <p class="history-description">柚希ジム エンジニアリング部 発足。</p>
+      <hr class="history-line">
+      <p class="history-date">2016/10/31</p>
+      <p class="history-description">「柚希ジム」爆誕。</p>
+      <%= image_tag(image_path("yzkgym_bakutan"), alt:"rana_matsui", :class => "history_image") %>
+      <hr class="history-line">
+      <p class="history-date">2016/10/29</p>
+      <p class="history-description">柚希未結のヲタク、幻影ギャラクティカフリコピ選手権出場。</p>
+      <hr class="history-line">
+      <p class="history-date">2015/07/03</p>
+      <p class="history-description">柚希未結 初ライブ。</p>
+    </div>
+  </section>
+  <section class="office_area">
+    <div class="office_area2">
+      <h1 class="office_title"><span id="title_txt">オフィス紹介</span></h1>
+      <p class="office_txt">東京・大阪を中心に、各地のライブハウス、スポッチャ、コワーキングスペースで活動しております。</p>
+      <%= image_tag(image_path("office_varon"), alt:"varon", :class => "office_image") %>
+      <%= image_tag(image_path("office_bronze"), alt:"bronze", :class => "office_image") %>
+      <%= image_tag(image_path("office_cowork"), alt:"cowork", :class => "office_image") %>
+      <%= image_tag(image_path("office_roundone"), alt:"roundone", :class => "office_image") %>
+    </div>
+  </section>
+  <section class="company_info_area">
+    <div class="company_info_area2">
+      <h1 class="company_info_title"><span id="title_txt">会社情報</span></h1>
+      <div class="ggmap"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3241.628981291859!2d139.6965670149577!3d35.66151168019891!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188ca9021ee8e1%3A0x52a368840fcb9299!2sWWW!5e0!3m2!1sja!2sjp!4v1525769030061" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe></div>
+      <table class="company_info_table">
+        <tr>
+          <th>会社名</th>
+          <td>合同会社 柚希ジム</br>(英文社名:Yzk-Gym LLC.)</td>
+        </tr>
+        <tr>
+          <th>所在地</th>
+          <td>〒150-0042</br>
+            東京都渋谷区宇田川町13−17 ライズビル</br></br>
+            5/20は上記の場所(渋谷WWW)にお越しください。</td>
+        </tr>
+        <tr>
+          <th>設立</th>
+          <td>2018年5月9日</td>
+        </tr>
+        <tr>
+          <th>資本金</th>
+          <td>10枚買っても1万円</td>
+        </tr>
+        <tr>
+          <th>事業内容</th>
+          <td>・柚希未結さんを応援する</br>
+            ・Webサイト、サービスの企画・開発</br>
+            ・スポッチャ</td>
+        </tr>
+      </table>
+    </div>
+  </section>
 </div>
-<section>
-  <!--ここに企業理念について書く-->
-</section>
-<section class="history_area">
-  <div class="history_area2">
-    <h1 class="history_title"><span id="title_txt">沿革</span></h1>
-    <p class="history-date">2018/05/09</p>
-    <p class="history-description">「合同会社 柚希ジム」設立。</p>
-    <hr class="history-line">
-    <p class="history-date">2017/09/24</p>
-    <p class="history-description">柚希ジム エンジニアリング部 発足。</p>
-    <hr class="history-line">
-    <p class="history-date">2016/10/31</p>
-    <p class="history-description">「柚希ジム」爆誕。</p>
-    <%= image_tag(image_path("yzkgym_bakutan"), alt:"rana_matsui", :class => "session_image") %>
-    <hr class="history-line">
-    <p class="history-date">2016/10/29</p>
-    <p class="history-description">柚希未結のヲタク、幻影ギャラクティカフリコピ選手権出場。</p>
-    <hr class="history-line">
-    <p class="history-date">2015/07/03</p>
-    <p class="history-description">柚希未結 初ライブ。</p>
-  </div>
-</section>
-<section class="office_area">
-  <div class="office_area2">
-    <h1 class="office_title"><span id="title_txt">オフィス紹介</span></h1>
-    <p class="office_txt">東京・大阪を中心に、各地のライブハウス、スポッチャ、コワーキングスペースで活動しております。</p>
-    <%= image_tag(image_path("office_varon"), alt:"varon", :class => "session_image") %>
-    <%= image_tag(image_path("office_bronze"), alt:"bronze", :class => "session_image") %>
-    <%= image_tag(image_path("office_roundone"), alt:"roundone", :class => "session_image") %>
-  </div>
-</section>
-<section class="company_info_area">
-  <div class="company_info_area2">
-    <h1 class="company_info_title"><span id="title_txt">会社情報</span></h1>
-    <div class="ggmap"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3241.628981291859!2d139.6965670149577!3d35.66151168019891!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188ca9021ee8e1%3A0x52a368840fcb9299!2sWWW!5e0!3m2!1sja!2sjp!4v1525769030061" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe></div>
-    <table class="company_info_table">
-      <tr>
-        <th>会社名</th>
-        <td>合同会社 柚希ジム</br>(英文社名:Yzk-Gym LLC.)</td>
-      </tr>
-      <tr>
-        <th>所在地</th>
-        <td>〒150-0042</br>
-          東京都渋谷区宇田川町13−17 ライズビル</br></br>
-          5/20は上記の場所(渋谷WWW)にお越しください。</td>
-      </tr>
-      <tr>
-        <th>設立</th>
-        <td>2018年5月9日</td>
-      </tr>
-      <tr>
-        <th>資本金</th>
-        <td>10枚買っても1万円</td>
-      </tr>
-      <tr>
-        <th>事業内容</th>
-        <td>・柚希未結さんを応援する</br>
-          ・Webサイト、サービスの企画・開発</br>
-          ・スポッチャ</td>
-      </tr>
-    </table>
-  </div>
-</section>
