@@ -30,6 +30,10 @@
     }
     a {
       color: #d8d8ff;
+      &:active {
+        color: white;
+        text-decoration: none;
+      }
     }
   }
 
