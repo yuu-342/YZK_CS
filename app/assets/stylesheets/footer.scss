@@ -3,6 +3,7 @@
 /*  footer  */
 @media screen and (max-width:479px){
   footer {
+    position: relative;
     background-color: #283593;
     ul { // リセット用(bootstrapが当たっちゃうので)
       margin: 0;

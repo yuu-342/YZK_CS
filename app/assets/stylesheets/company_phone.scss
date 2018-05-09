@@ -3,25 +3,47 @@
 /*  募集要項  */
 @media screen and (max-width:479px) {
 
-  .title {
-    position: relative;
+  .office_image {
+    width: auto;
+    height: auto;
+    margin: 0.1em 0;
+    max-width: 100%;
+    max-height: 100%;
   }
 
-  .title h3 {
-    position: absolute;
-    color: white;
+  .history_image {
+    display: block;
+    width: auto;
+    height: auto;
+    margin: 0 auto;
+    max-width: 80%;
+    max-height: 100%;
+  }
+
+  .company_title {
+    width: 100%;
+    height: 270px;
+    background: -moz-linear-gradient(65deg, #C3C8FF 20%, #70C8FF 70%, #C3E3FF);
+    background: -webkit-linear-gradient(65deg, #C3C8FF 20%, #70C8FF 70%, #C3E3FF);
+    background: linear-gradient(25deg, #C3C8FF 20%, #70C8FF 70%, #C3E3FF);
+    text-align: center;
+  }
+
+  .company_title h3 {
+    color: #FFFFFF;
+    text-shadow: 1px 1px 1px #999999;
     font-weight: bold;
-    font-size: 2em;
-    top: 90%;
-    left: 50%;
-    -ms-transform: translate(-50%,-50%);
-    -webkit-transform: translate(-50%,-50%);
-    transform: translate(-50%,-50%);
-    margin:0;
-    padding:0;
+    font-size: 2.5em;
+    margin-top: 0;
+    padding-top: 40px;
   }
 
-  .title_image {
+  .company_title_description {
+    margin-top: 30px;
+    line-height: 2.5em;
+  }
+
+  .company_title_image {
     width: 100%;
   }
 
@@ -43,17 +65,7 @@
     text-align: left;
   }
 
-  .recruitment_area {
-    @include box;
-    .recruitment_area2 {
-      @include content_area;
-      .recruitment_title {
-        @include title;
-      }
-    }
-  }
-
-  /* 募集要項テーブル */
+  /* 会社情報テーブル */
 
   .company_info_table {
     width: 90%;
@@ -72,6 +84,10 @@
   }
   .company_info_table td {
     padding: 10px 10px 25px 10px ;
+  }
+
+  .main_content_area {
+    position: relative;
   }
 
 
