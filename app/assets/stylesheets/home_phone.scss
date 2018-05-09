@@ -88,14 +88,7 @@
         height:auto;
       }
       .news_title {
-        margin-top: 15px !important;
-        margin-bottom: 20px !important;
-        padding-left: 20px;
-        font-size: 22px;
-        font-weight: bold;
-        font-family: sans-serif;
-        color: #283593;
-        text-align: left;
+        @include title;
       }
       li.news_item {
         font-size: 1.1em;
