@@ -4,36 +4,36 @@
 
 @media screen and (max-width:479px){
   header {
-  min-height: 5% !important;
-  width: 100%;
-  padding-right: 10px;
-  position: fixed;
-  background-color: white;
-  border-radius: 0.2px lightgray;
-  border-bottom: 0.3px lightgray;
-  box-shadow: 0 0.3px 0.5px lightgray;
+    min-height: 5% !important;
+    width: 100%;
+    padding-right: 10px;
+    position: fixed;
+    background-color: white;
+    border-radius: 0.2px lightgray;
+    border-bottom: 0.3px lightgray;
+    box-shadow: 0 0.3px 0.5px lightgray;
   }
 
   img.logo {
-  max-height: 40px;
-  width: auto;
+    max-height: 40px;
+    width: auto;
   }
 }
 
 @media screen and (min-width:480px){
   header {
-  height: 70px;
-  width: 70%;
-  padding-right: 10px;
-  position: fixed;
-  background-color: white;
-  text-align: right;
+    height: 70px;
+    width: 70%;
+    padding-right: 10px;
+    position: fixed;
+    background-color: white;
+    text-align: right;
   }
 
   img.logo {
-  position: absolute;
-  left: 0 !important;
-  height: 70px;
+    position: absolute;
+    left: 0 !important;
+    height: 70px;
   }
 
   .nav-unshown {
@@ -49,34 +49,34 @@
 }
 
 
-     /* ハンバーガーメニュー */
+/* ハンバーガーメニュー */
 
 @media screen and (max-width:479px){
-#nav-drawer {
-  position: relative;
-}
+  #nav-drawer {
+    position: relative;
+  }
 
-#item{
-  position: absolute;
-}
+  #item{
+    position: absolute;
+  }
 
-     /*チェックボックスを非表示にする*/
-.nav-unshown {
-  display:none;
-}
+  /*チェックボックスを非表示にする*/
+  .nav-unshown {
+    display:none;
+  }
 
-     /*アイコンのスペース*/
-#nav-open {
-  display: inline-block;
-  position: absolute;
-  padding-top: 9px;
-  width: 40px;
-  height: 30px;
-  vertical-align: middle;
-  right: 0;
-}
+  /*アイコンのスペース*/
+  #nav-open {
+    display: inline-block;
+    position: absolute;
+    padding-top: 9px;
+    width: 40px;
+    height: 30px;
+    vertical-align: middle;
+    right: 0;
+  }
 
-#nav-open span, #nav-open span:before, #nav-open span:after {
+  #nav-open span, #nav-open span:before, #nav-open span:after {
     position: absolute;
     height: 3px;
     width: 25px;
@@ -85,15 +85,15 @@
     display: block;
     content: '';
   }
-#nav-open span:before {
+  #nav-open span:before {
     bottom: -8px;
   }
-#nav-open span:after {
+  #nav-open span:after {
     bottom: -16px;
   }
 
-     /*閉じる用の薄黒カバー*/
-#nav-close {
+  /*閉じる用の薄黒カバー*/
+  #nav-close {
     display: none;
     position: fixed;
     z-index: 99;
@@ -104,10 +104,10 @@
     background: black;
     opacity: 0;
     transition: .3s ease-in-out;
-}
+  }
 
-     /*中身*/
-#nav-content {
+  /*中身*/
+  #nav-content {
     overflow: auto;
     position: fixed;
     top: auto ;
@@ -116,29 +116,32 @@
     width: 90%;
     max-width: 330px;
     height: 100%;
-    background: #fff;
+    background: #5C6BC0;
     transition: .3s ease-in-out;
     -webkit-transform: translateX(-105%);
     transform: translateX(-105%);
     text-align: bottom;
     list-style: none;
     line-height: 30px;
-    .item{
+    .items{
       margin-right: 30px;
       padding-top: 50px;
       font-size: 20px;
-      border-bottom: solid 1px lightgray;
+      border-bottom: solid 1px #fff;
+      .item{
+        color: #fff;
+      }
     }
-}
+  }
 
 
-     /*チェックが入ったらもろもろ表示*/
-#nav-input:checked ~ #nav-close {
+  /*チェックが入ったらもろもろ表示*/
+  #nav-input:checked ~ #nav-close {
     display: block;/*カバーを表示*/
     opacity: .5;
-}
+  }
 
-#nav-input:checked ~ #nav-content {
+  #nav-input:checked ~ #nav-content {
     -webkit-transform: translateX(0%);
     transform: translateX(0%);/*中身を表示（右へスライド）*/
     box-shadow: 6px 0 25px rgba(0,0,0,.15);
