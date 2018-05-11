@@ -1,8 +1,3 @@
-<head>
-  <script>
-  window.twttr=(function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],t=window.twttr||{};if(d.getElementById(id))return;js=d.createElement(s);js.id=id;js.src="https://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);t._e=[];t.ready=function(f){t._e.push(f);};return t;}(document,"script","twitter-wjs"));
-  </script>
-<head>
 <footer>
   <div class="footer_content">
     <div class="footer_item">
@@ -14,8 +9,8 @@
       <ul><%= link_to "プライバシーポリシー" , privacy_path %></ul>
       <ul><%= link_to "サイトのご説明" ,expo_path %></ul>
       <!-- シェアボタンに変換される -->
-      <a class="twitter-share-button" href="https://twitter.com/share"  data-hashtags="柚希ジム"
-      data-dnt="true" target="_blank">Tweet</a>
+      <a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" data-show-count="false">Tweet</a>
+      <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
     </div>
   </div>
   <div class="footer_logo"></div>

@@ -1,21 +1,25 @@
-@import "mixin";
+@import "bootstrap-sprockets";
+@import "bootstrap";
+
 
 /* header*/
 
 @media screen and (max-width:479px){
   header {
-    min-height: 5% !important;
+    min-height: 7% !important;
     width: 100%;
     padding-right: 10px;
     position: fixed;
+    top: 0px;
     background-color: white;
     border-radius: 0.2px lightgray;
     border-bottom: 1px lightgray;
     box-shadow: 0 0.3px 0.5px lightgray;
+    z-index: 999;
   }
 
   img.logo {
-    max-height: 40px;
+    height: 50px;
     width: auto;
   }
 }
@@ -69,9 +73,10 @@
   #nav-open {
     display: inline-block;
     position: absolute;
-    padding-top: 9px;
+    padding-top: 15px;
+    padding-right: 5px;
     width: 40px;
-    height: 30px;
+    height: 40px;
     vertical-align: middle;
     right: 0;
   }
@@ -86,10 +91,10 @@
     content: '';
   }
   #nav-open span:before {
-    bottom: -8px;
+    bottom: -10px;
   }
   #nav-open span:after {
-    bottom: -16px;
+    bottom: -20px;
   }
 
   /*閉じる用の薄黒カバー*/
