@@ -1,10 +1,10 @@
 <header class="header-fixed"><!-- ハンバーガーメニューを開いたときにうまく表示されない -->
-    <%= link_to image_tag(image_path("Yzk-Gym-logo2.svg"), alt:"Yzk-Gym-logo", :class => "logo"),
-                root_url %>
+    <%= image_tag(image_path("Yzk-Gym-logo2.svg"), alt:"Yzk-Gym-logo", :class => "logo")%>
     <input id="nav-input" type="checkbox" class="nav-unshown">
     <label id="nav-open" for="nav-input"><span></span></label>
     <label class="nav-unshown" id="nav-close" for="nav-input"></label>
     <ul id="nav-content">
+      <li class="items"><%= link_to "TOP", root_path ,:class => "item" %></li>
       <li class="items"><%= link_to "企業概要", company_path , :class => "item" %></li>
       <li class="items"><%= link_to "活動内容", work_path , :class => "item" %></li>
       <li class="items"><%= link_to "採用情報", recruit_path , :class => "item" %></li>
