@@ -3,7 +3,7 @@ class StaticPagesController < ApplicationController
   def home
   end
   
-  def about
+  def privacy
   end
 
   def work
@@ -12,12 +12,9 @@ class StaticPagesController < ApplicationController
   def company
   end
 
-  def trainning
+  def info
   end
 
   def recruit
-  end
-
-  def member
   end
 end
